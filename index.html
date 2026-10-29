@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MUTEBI WAISEDHA STUDIOS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#fff;--fg:#14141a;--mut:#6b6b76;--pan:#f1f1f4;--line:#dcdce2;--red:#d6232a;--box:sizing;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e12;--fg:#f2f2f5;--mut:#9a9aa6;--pan:#1a1a21;--line:#2a2a33}}
+:root[data-theme="dark"]{--bg:#0e0e12;--fg:#f2f2f5;--mut:#9a9aa6;--pan:#1a1a21;--line:#2a2a33}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.hd,nav a,.b,button,.btn{font-family:Oswald,Impact,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.04em}
+a{color:inherit;text-decoration:none}
+.util{background:#000;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:6px 14px;font-size:12px}
+.util button{background:none;border:0;color:#fff;font-size:12px;cursor:pointer;padding:4px}
+header{display:flex;align-items:center;justify-content:center;position:relative;padding:8px 14px;background:#111;border-top:1px solid #333}
+.logo{display:flex;align-items:center;gap:8px;color:#fff}.logo b{background:var(--red);padding:2px 12px;font-size:28px;line-height:1.1;font-family:Oswald,Impact,sans-serif}
+.logo span{font-family:Oswald,sans-serif;font-size:13px;letter-spacing:.12em;max-width:110px;line-height:1.15}
+.sb{position:absolute;right:10px;background:none;border:0;color:#fff;font-size:22px;cursor:pointer}
+nav{display:flex;gap:2px;overflow-x:auto;background:#111;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+nav a{color:#fff;padding:11px 14px;font-size:13px;white-space:nowrap}nav a.on{background:var(--red)}
+main{max-width:980px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:34px;margin:.2em 0 .4em}h2{font-size:22px;margin:1.4em 0 .6em;border-left:5px solid var(--red);padding-left:10px}
+.hero{background:radial-gradient(ellipse at 80% 20%,#7a1015 0,transparent 55%),linear-gradient(115deg,#050507 55%,#1c0b0d);color:#fff;padding:54px 18px 44px;min-height:62vh;display:flex;flex-direction:column;justify-content:center}
+.hero>*{max-width:980px;width:100%;margin-left:auto;margin-right:auto}
+.hero small{font-family:Oswald,sans-serif;letter-spacing:.18em;color:#ff7b80;font-size:12px}
+.hero h1{font-size:clamp(40px,11vw,92px);line-height:.95;margin:.25em auto .3em;font-weight:700}
+.hero p{max-width:520px;color:#d4d4dc;margin:0 auto 22px;margin-left:auto}
+.btn,button.btn{display:inline-block;background:var(--red);color:#fff;padding:11px 22px;border:0;font-size:14px;cursor:pointer;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);margin:0 8px 8px 0}
+.btn.g{background:#2a2a33}.btn.s{padding:7px 16px;font-size:12px}
+.ticker{display:flex;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--bg)}
+.ticker a{padding:14px 18px;font-size:13px;white-space:nowrap;border-top:3px solid transparent;font-family:Oswald,sans-serif;text-transform:uppercase}.ticker a:first-child{border-color:var(--red);color:var(--red)}
+.row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+.card{flex:0 0 160px;scroll-snap-align:start}
+.cv{aspect-ratio:2/3;display:flex;flex-direction:column;justify-content:flex-end;padding:10px;color:#fff;font-family:Oswald,Impact,sans-serif;font-size:24px;line-height:1;text-transform:uppercase;font-weight:700;box-shadow:inset 0 -90px 60px -40px #000a}
+.card p{font-size:12px;margin:6px 0 0;font-family:Oswald,sans-serif;text-transform:uppercase}
+.card small{color:var(--mut);display:block;font-size:11px;text-transform:none;font-family:"Source Sans 3",sans-serif}
+.grid{display:grid;gap:22px}@media(min-width:760px){.grid{grid-template-columns:2fr 1fr}}
+.it{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.th{flex:0 0 96px;height:68px;display:flex;align-items:center;justify-content:center;color:#fff;font:700 20px Oswald,sans-serif;font-style:normal;overflow:hidden}
+.it small{color:var(--mut);font:12px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.06em}.it h3{margin:2px 0;font-size:17px;line-height:1.2;text-transform:none;letter-spacing:0}
+.pan{background:var(--pan);padding:16px;border-top:3px solid var(--red)}
+.b{display:inline-block;padding:2px 8px;font-size:11px;color:#fff;background:#555;margin:2px 4px 2px 0}
+.s0{background:#1a8a4a}.s1{background:#2a6fdb}.s2{background:#7a4dd8}.s3{background:#c27a00}.s4{background:#777}
+.fb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+input,select,textarea{font:inherit;padding:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:0;max-width:100%}
+.fb input{flex:1 1 180px}textarea{width:100%;min-height:80px}textarea.big{min-height:260px}
+label{display:block;font:600 13px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.05em;margin:14px 0 4px}
+label.c{display:flex;gap:8px;align-items:center}
+.empty{padding:18px;border:1px dashed var(--line);color:var(--mut)}
+.warn{background:#fff3cd;color:#4a3a00;padding:12px;border-left:5px solid #c27a00;margin:12px 0;font-size:14px}
+.rd{background:var(--pan);padding:18px;margin:14px 0;font-size:calc(var(--fs,18px));line-height:1.75;white-space:pre-wrap;font-family:Georgia,serif;max-width:68ch}
+.rd.sep{background:#f4ecd8;color:#3b2f1c}.rd.blk{background:#000;color:#e6e6e6}
+.tools{display:flex;gap:6px;flex-wrap:wrap}.tools button{padding:6px 12px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+details{border:1px solid var(--line);margin:10px 0}summary{padding:12px;cursor:pointer;font:600 15px Oswald,sans-serif;text-transform:uppercase;background:var(--pan)}details>div{padding:12px}
+.ban{padding:22px 16px;color:#fff;margin:-20px -16px 18px}.ban h1{margin:0}.crumb{font-size:13px;color:var(--mut)}
+.kv{margin:8px 0}.kv b{display:block;font:600 12px Oswald,sans-serif;text-transform:uppercase;color:var(--mut);letter-spacing:.06em}
+.kv span{white-space:pre-wrap}.pn{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+footer{background:#111;color:#bbb;padding:26px 16px;font-size:13px}footer>div{max-width:980px;margin:auto}footer a{color:#fff;margin-right:14px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#000;color:#fff;padding:10px 18px;display:none;z-index:9;border-left:4px solid var(--red)}
+.pt{width:100px;height:100px;object-fit:cover;float:right;margin:0 0 8px 12px}
+</style></head><body>
+<div class="util"><span id="cloud-label">MUTEBI WAISEDHA STUDIOS · cloud archive</span><button onclick="tCre()" id="cm"></button></div>
+<header><a class="logo" href="#home"><b>MWS</b><span>MUTEBI WAISEDHA STUDIOS</span></a><button class="sb" onclick="location.hash='search'" aria-label="Search">&#9906;</button></header>
+<nav><a href="#home">Home</a><a href="#archive">Stories</a><a href="#chars">Characters</a><a href="#unis">Franchises</a><a href="#cont">Continuity</a><a href="#manage">Creator Studio</a></nav>
+<div id="app"></div>
+<footer><div><p><a href="#archive">Story Archive</a><a href="#chars">Characters</a><a href="#cont">Continuity Guide</a><a href="#manage">Creator Studio</a><a href="#" onclick="tTh();return false">Light / Dark</a></p>
+<p>MUTEBI WAISEDHA STUDIOS. All stories, characters and worlds belong to their creator, who alone decides what is canon. Public stories are read from the studio cloud archive. Creator editing requires the authorized creator account.</p></div></footer>
+<div id="toast"></div>
+<script>
+const ST=['CANON','CANON-COMPLIANT','NON-CANON / ORIGINAL','LEGACY / NEEDS REVIEW','INCOMPLETE SOURCE'],DR=['Not started','Draft','Complete','Published'],K='mws_v1';
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let db,cre=false,sq='',tmpImg=null,tmpImgFile=null,cloudReady=false,creatorUser=null;
+const SUPABASE_URL='https://nspwpovfquseabnddlek.supabase.co';
+const SUPABASE_KEY='sb_publishable_tNv5e9K8xGagnKQE4PyXZg_JnffkRAd';
+let supabaseClient=null;
+function cloudInit(){try{if(window.supabase&&window.supabase.createClient){supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);return true}}catch(e){}return false}
+function rowToStory(row){const d=row.data&&typeof row.data==='object'?row.data:{};return {...d,id:d.id||row.slug,title:d.title||row.title,summary:d.summary||row.summary||'',body:d.body||row.content||'',cover:d.cover||row.cover_image_url||'',draft:row.status==='published'?'Published':(d.draft||'Draft'),pub:!!d.pub,u:row.updated_at?Date.parse(row.updated_at):(d.u||Date.now())}}
+async function cloudLoadStories(){if(!supabaseClient)return;try{let q=supabaseClient.from('studio_stories').select('*').order('updated_at',{ascending:false});if(!cre)q=q.eq('status','published');const {data,error}=await q;if(error)throw error;db.st=(data||[]).map(rowToStory);cloudReady=true;save();document.getElementById('cloud-label').textContent=cre?'Creator account · cloud connected':'Public archive · cloud connected';R()}catch(e){document.getElementById('cloud-label').textContent='Cloud connection needs setup';console.warn('Cloud read:',e.message)}}
+function publicCharacter(c){const d={...c};delete d.notes;return d}
+async function cloudLoadCharacters(){if(!supabaseClient)return;try{const {data,error}=await supabaseClient.from('studio_characters').select('*').order('updated_at',{ascending:false});if(error)throw error;const local=db.ch||[];const remote=(data||[]).map(r=>{const d=r.data&&typeof r.data==='object'?r.data:{};const old=local.find(x=>x.id===r.id);return {...d,id:r.id,notes:old?.notes||'',u:r.updated_at?Date.parse(r.updated_at):(d.u||Date.now())}});const ids=new Set(remote.map(c=>c.id));db.ch=[...remote,...local.filter(c=>!ids.has(c.id))];save();R()}catch(e){console.warn('Character cloud read:',e.message);document.getElementById('cloud-label').textContent='Character cloud setup needed · run updated SQL'}}
+async function cloudSaveCharacter(character){if(!supabaseClient||!creatorUser)throw new Error('Sign in as the authorized creator first.');const data=publicCharacter(character);const row={id:String(character.id),name:character.name||'Unnamed character',fid:character.fid||null,status:character.status||'INCOMPLETE SOURCE',data,updated_at:new Date().toISOString()};const {error}=await supabaseClient.from('studio_characters').upsert(row,{onConflict:'id'});if(error)throw error;document.getElementById('cloud-label').textContent='Creator account · cloud connected'}
+async function cloudDeleteCharacter(id){if(!supabaseClient||!creatorUser)throw new Error('Sign in as the authorized creator first.');const {error}=await supabaseClient.from('studio_characters').delete().eq('id',String(id));if(error)throw error}
+async function uploadImage(file,folder,id){if(!supabaseClient||!creatorUser)throw new Error('Sign in before uploading images.');if(!file||!file.type.startsWith('image/'))throw new Error('Choose an image file.');if(file.size>5*1024*1024)throw new Error('Image must be 5 MB or smaller.');const ext=(file.name.split('.').pop()||'jpg').toLowerCase().replace(/[^a-z0-9]/g,'')||'jpg';const path=folder+'/'+String(id)+'-'+Date.now()+'.'+ext;const {data,error}=await supabaseClient.storage.from('mws-images').upload(path,file,{cacheControl:'3600',upsert:false,contentType:file.type});if(error)throw error;return supabaseClient.storage.from('mws-images').getPublicUrl(data.path).data.publicUrl}
+async function cloudSaveStory(story){if(!supabaseClient||!creatorUser)throw new Error('Sign in as the authorized creator first.');const published=story.draft==='Published';const now=new Date().toISOString();const row={slug:String(story.id),title:story.title||'Untitled',summary:story.summary||'',content:story.body||'',cover_image_url:story.cover||null,status:published?'published':'draft',updated_at:now,published_at:published?now:null,data:story};const {error}=await supabaseClient.from('studio_stories').upsert(row,{onConflict:'slug'});if(error)throw error;story.u=Date.now();document.getElementById('cloud-label').textContent='Creator account · cloud connected'}
+async function cloudDeleteStory(id){if(!supabaseClient||!creatorUser)throw new Error('Sign in as the authorized creator first.');const {error}=await supabaseClient.from('studio_stories').delete().eq('slug',String(id));if(error)throw error}
+async function cloudImportStories(list){if(!supabaseClient||!creatorUser)throw new Error('Sign in as the authorized creator first.');let done=0;for(const story of list){if(!story||!story.id||!story.title)continue;await cloudSaveStory(story);done++}await cloudLoadStories();toast('Uploaded '+done+' stories. Published status follows each story’s Draft / publication status.')}
+async function signInCreator(){const email=document.getElementById('creator-email')?.value.trim(),password=document.getElementById('creator-password')?.value;if(!email||!password)return toast('Enter your creator email and password.');if(!supabaseClient)return toast('Cloud library failed to load. Refresh the page.');const b=document.getElementById('creator-login-btn');if(b){b.disabled=true;b.textContent='Signing in…'}try{const {data,error}=await supabaseClient.auth.signInWithPassword({email,password});if(error)throw error;const user=data.user;if(user?.app_metadata?.studio_role!=='creator'){await supabaseClient.auth.signOut();throw new Error('This account is not authorized as the studio creator.')}creatorUser=user;cre=true;cm();await cloudLoadStories();await cloudLoadCharacters();toast('Creator signed in securely.');R()}catch(e){toast(e.message||'Sign-in failed.');if(b){b.disabled=false;b.textContent='Sign in'}}}
+async function signOutCreator(){if(supabaseClient)await supabaseClient.auth.signOut();creatorUser=null;cre=false;cm();await cloudLoadStories();await cloudLoadCharacters();toast('Signed out.');R()}
+async function checkCreatorSession(){if(!supabaseClient)return;try{const {data}=await supabaseClient.auth.getSession();const user=data?.session?.user;if(user?.app_metadata?.studio_role==='creator'){creatorUser=user;cre=true}else{creatorUser=null;cre=false}cm();await cloudLoadStories();await cloudLoadCharacters()}catch(e){console.warn(e)}}
+function seed(){const now=Date.now();let n=0,m=0;
+const S=(title,fid,line,status,num,summary,x)=>Object.assign({id:'s'+(++n),title,alt:'',fid,line,status,draft:'Not started',num,ord:num,summary,body:'',chars:'',affil:'',powers:'',tl:'',rel:'',xref:'',q:'',hist:'',notes:'',pub:false,u:now},x||{});
+const C=(name,fid,bio,x)=>Object.assign({id:'c'+(++m),name,alias:'',fid,status:'INCOMPLETE SOURCE',bio:bio||'',powers:'',affil:'',rel:'',first:'',feats:'',img:'',notes:'',u:now},x||{});
+const NF='Name appears in the creator’s material; biography not supplied.';
+return{app:'mws',
+fr:[
+{id:'mwu',short:'MWU',name:'MUTEBI WAISEDHA UNIVERSE',type:'Fictional universe',color:'#c4161c',lines:'Waisedha, Luvicebi, BORNEFAITH',desc:'The shared superhero and speculative-fiction universe combining the Waisedha foundation and evolved MUTEBI material. Waisedha, Luvicebi and BORNEFAITH are storylines inside it, not automatically separate universes. Older material stays marked as legacy until the creator promotes it.'},
+{id:'zs',short:'0 STATE',name:'0 STATE',type:'Fictional universe',color:'#1f5fc7',lines:'',desc:'A separate superhero/speculative franchise with its own tier and speed mechanics. Previously titled INGRATES. Not part of MWU.'},
+{id:'kd',short:'KOLONIAL DECREE',name:'KOLONIAL DECREE',type:'Fighting-game franchise',color:'#c27a00',lines:'Light Speed (High Tier side story)',desc:'An independent fighting-game IP with its own canon. Direction: Android-first, 2.5D fighters on a side-on plane, on-screen touch controls, roster, cutscenes and a tournament story. Not part of MWU or 0 STATE.'},
+{id:'s7',short:'STUDIO 7 AFRICA',name:'STUDIO 7 AFRICA',type:'Film initiative',color:'#12805c',lines:'',desc:'The creator’s short-film and screen-story initiative. No titles have been supplied yet.'},
+{id:'vs',short:'VERSUS',name:'VERSUS',type:'Product / app concept',color:'#6b36b8',lines:'',desc:'A battleboarding and database app concept for comparing fictional characters across franchises. It is a product concept, not a fictional universe.'}],
+st:[
+S('Waisedha','mwu','Waisedha','LEGACY / NEEDS REVIEW','','Foundation storyline of the MWU. Older material may need revision before it is designated current canon.'),
+S('Luvicebi','mwu','Luvicebi','INCOMPLETE SOURCE','','Named storyline within MWU development history. No source text supplied.'),
+S('BORNEFAITH','mwu','BORNEFAITH','INCOMPLETE SOURCE','','Named storyline within MWU development history. No source text supplied.'),
+S('Waisedha: Vogard War','mwu','Waisedha','INCOMPLETE SOURCE','','Referenced title. Plot not established. Awaiting source material.'),
+S('Waisedha: Botanical War','mwu','Waisedha','INCOMPLETE SOURCE','','Referenced title. Plot not established. Awaiting source material.'),
+S('CARDIAC / A.N.T.I.','mwu','Waisedha','LEGACY / NEEDS REVIEW','','Older Waisedha material. Known names: CARDIAC, Phalanx, The Cyrense Box, Khore, Vantage, Vixen, Vankhore, Vangorl, Vandal Beast.',{chars:'CARDIAC, Phalanx, Khore, Vantage, Vixen, Vankhore, Vangorl, Vandal Beast'}),
+S('Vanskourge / Ahmed Lukwago','mwu','Waisedha','LEGACY / NEEDS REVIEW',7,'Recorded continuity note: the creator changed this material’s placement to Story 7. Full plot not supplied.',{chars:'Vanskourge, Ahmed',alt:'Story 7'}),
+S('Story 8','mwu','Waisedha','INCOMPLETE SOURCE',8,'Reference only: King Polas, Pirate Uzhi, Mbaire and a creation gem. Motivations, powers and outcomes not supplied.',{chars:'King Polas, Pirate Uzhi, Mbaire'}),
+S('Death Soldier: 50000th Target','mwu','Waisedha','INCOMPLETE SOURCE',9,'Referred to as Story 9 (“50000th Target”). Established mechanic: a freedom rule tied to completing 50,000 targets. Referenced elements: DeathClock, IDAA, Swordizz, Oxido-83B, a former human pulled into a black-hole experiment, an anchor and regeneration, no aging, existence across the multiverse, IDAA assassin training. How these connect is not documented.',{alt:'50000th Target',chars:'DeathClock',q:'How do DeathClock, IDAA, Swordizz and Oxido-83B connect? Not documented.'}),
+S('Tier -0 rules and Ggorku vs Remorse','zs','Tier system','INCOMPLETE SOURCE','','Ggorku does not permanently operate in Tier -0. He spends energy to reach it and drops back to lower speed-scale levels when exhausted. In the recorded confrontation he had exhausted himself fighting Remorse in Tier -0. Full tier definitions are not supplied.',{chars:'Ggorku, Remorse, Gravitor'}),
+S('Unknown Emperor’s Tournament','kd','Origin premise','INCOMPLETE SOURCE','','A black hole collides with a white hole and produces an infant of an unknown race, raised by space pirates into a fierce pirate who builds an army by raids and slave-buying and turns conquered planets into colonies. An Unknown Emperor then sets a tournament: each colony sends seven warriors, and the losing colony is destroyed. The Emperor’s identity and motives are revealed gradually and are not disclosed here.',{chars:'Unknown Emperor'}),
+S('Light Speed: High Tier side story','kd','Light Speed','INCOMPLETE SOURCE','','High Tier is human but not from Earth. He becomes the Kolonial Emperor’s colonial messenger to spare his home world. Speed is described in frequency bands (0–9, 10–19 and beyond). Not connected to CARDIAC. Origin, limits and ending not supplied.',{chars:'High Tier, Vangorl'})],
+ch:[
+C('Wildbat','mwu',''),C('Andriner','mwu',''),C('Silent','mwu',''),
+C('CARDIAC','mwu','Established name in the older Waisedha material.'),C('Phalanx','mwu','Established name in the older Waisedha material.'),
+C('Khore','mwu',''),C('Vantage','mwu',''),C('Vixen','mwu',''),C('Gorspeed','mwu','Not the same as Gravitor (0 STATE).'),C('Gravator','mwu',''),C('Khardum','mwu',''),
+C('Lobero','mwu','',{alias:'Loboros',notes:'Two spellings known (Lobero / Loboros). Creator to confirm.'}),
+C('Polasi','mwu',''),C('Nalok','mwu',''),C('Mithoz','mwu',''),C('Arakhane','mwu',''),C('Ahmed','mwu','Ahmed Lukwago is associated with Vanskourge. How the two names relate is not confirmed.',{alias:'Ahmed Lukwago'}),
+C('Marvicx','mwu',''),C('Blood Archer','mwu',''),C('KORDUM','mwu',''),C('Glavie','mwu',''),
+C('Vankhore','mwu','A clone of a surgeon.'),
+C('Vangorl','mwu','Recorded as a generator in CARDIAC-related material and as a clone in the High Tier comparison. See flagged conflict. Recorded claim: 900 quintillion miles per millisecond, shocked by High Tier’s faster frequency-jumping (a fictional feat, not a measurement).'),
+C('Vandal Beast','mwu',''),C('Vanskourge','mwu','Also associated with Ahmed Lukwago. Placement set to Story 7 by the creator.'),
+C('King Polas','mwu','Appears in the Story 8 reference.'),C('Pirate Uzhi','mwu','Appears in the Story 8 reference.'),C('Mbaire','mwu','Appears in the Story 8 reference.'),C('DeathClock','mwu','Referenced in the 50000th Target material.'),
+C('Ggorku','zs','Does not permanently operate in Tier -0; must expend energy to reach it and returns to lower speed-scale levels when exhausted.'),
+C('Remorse','zs','Fought Ggorku in Tier -0 in the recorded confrontation.'),
+C('Gravitor','zs','A gravity-related character or entity. Do not confuse with Gorspeed (MWU).'),
+C('High Tier','kd','Human but not from Earth. Becomes the Kolonial Emperor’s colonial messenger to spare his home world. Not connected to CARDIAC.'),
+C('Unknown Emperor','kd','Establishes the tournament: each colony sends seven warriors and the losing colony is destroyed. True nature revealed gradually; not disclosed here.')],
+notes:[
+{id:'n1',kind:'Conflict',txt:'Vangorl is described as a generator (CARDIAC material) and as a clone (High Tier comparison note). Creator to decide which holds.',done:false},
+{id:'n2',kind:'Conflict',txt:'Spelling variation: Lobero / Loboros. Both kept until the creator chooses.',done:false},
+{id:'n3',kind:'Question',txt:'Precise links among DeathClock, IDAA, Swordizz and Oxido-83B are undocumented.',done:false},
+{id:'n4',kind:'Question',txt:'No crossover between MWU, 0 STATE and KOLONIAL DECREE is authorized. Gravitor (0 STATE) and Gorspeed (MWU) must stay distinct.',done:false}],u:now}}
+function load(){try{const r=localStorage.getItem(K);if(r){const d=JSON.parse(r);if(d&&d.st)return d}}catch(e){}return seed()}
+function save(){try{localStorage.setItem(K,JSON.stringify(db))}catch(e){toast('Browser storage unavailable. Export a backup.')}}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2600)}
+const F=id=>db.fr.find(f=>f.id==id)||{short:'Unassigned',name:'Unassigned',color:'#555'};
+const bd=s=>`<span class="b s${ST.indexOf(s)<0?4:ST.indexOf(s)}">${esc(s||'UNSET')}</span>`;
+const dt=t=>t?new Date(t).toLocaleDateString():'';
+const so=(a,b)=>(a.fid>b.fid?1:a.fid<b.fid?-1:0)||(+a.ord||9999)-(+b.ord||9999)||a.title.localeCompare(b.title);
+const hay=o=>Object.keys(o).filter(k=>k!='notes'&&k!='img'&&k!='id').map(k=>o[k]).join(' ').toLowerCase();
+const kv=(l,v)=>v?`<div class="kv"><b>${l}</b><span>${esc(v)}</span></div>`:'';
+const aw='<i style="color:var(--mut)">Details awaiting creator input</i>';
+function cv(f,t,sub,h){return `<a class="card" href="${h}"><div class="cv" style="background:linear-gradient(160deg,${f.color},#0a0a0d 85%)">${esc(t)}</div><p>${esc(t)}<small>${esc(sub)}</small></p></a>`}
+function sl(a){return a.length?a.map(s=>`<a class="it" href="#s-${s.id}"><i class="th" style="background:linear-gradient(135deg,${F(s.fid).color},#111)">${s.cover?`<img src="${esc(s.cover)}" alt="" style="width:100%;height:100%;object-fit:cover">`:esc(F(s.fid).short.slice(0,3))}</i><div><small>${esc(F(s.fid).short)}${s.line?' · '+esc(s.line):''}</small><h3>${esc(s.title)}</h3>${bd(s.status)}<small>${s.num?'Story '+esc(s.num)+' · ':''}Updated ${dt(s.u)}</small></div></a>`).join(''):'<div class="empty">No stories match. Use Creator Studio to add one, or clear the filters.</div>'}
+function cl(a){return a.length?a.map(c=>`<a class="it" href="#c-${c.id}"><i class="th" style="background:linear-gradient(135deg,${F(c.fid).color},#111)">${c.img?`<img src="${c.img}" alt="" style="width:100%;height:100%;object-fit:cover">`:esc(c.name.slice(0,2))}</i><div><small>${esc(F(c.fid).short)}</small><h3>${esc(c.name)}</h3>${bd(c.status)}<br><small>${c.bio?esc(c.bio.slice(0,90)):'Details awaiting creator input'}</small></div></a>`).join(''):'<div class="empty">No characters match.</div>'}
+function fbar(k){return `<div class="fb"><input id="q" placeholder="Search…" oninput="flt('${k}')"><select id="ff" onchange="flt('${k}')"><option value="">All franchises</option>${db.fr.map(f=>`<option value="${f.id}">${esc(f.short)}</option>`).join('')}</select><select id="fs" onchange="flt('${k}')"><option value="">All statuses</option>${ST.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')}</select></div>`}
+function flt(k){const q=document.getElementById('q').value.toLowerCase(),f=document.getElementById('ff').value,s=document.getElementById('fs').value;
+const a=db[k=='s'?'st':'ch'].filter(o=>(!f||o.fid==f)&&(!s||o.status==s)&&(!q||hay(o).includes(q)));
+if(k=='s')a.sort(so);document.getElementById('res').innerHTML=k=='s'?sl(a):cl(a)}
+const V={};
+V.home=()=>{const lat=[...db.st].sort((a,b)=>b.u-a.u).slice(0,6),lg=db.st.filter(s=>s.status.startsWith('LEGACY')).length,op=db.notes.filter(n=>!n.done).length;
+return `<div class="hero"><small>ORIGINAL STORIES. CONNECTED WORLDS. YOUR IMAGINATION.</small><h1>MUTEBI WAISEDHA STUDIOS</h1><p>Home of the Mutebi Waisedha Universe and the studio’s other worlds. Read stories, meet characters and follow the continuity.</p><div><a class="btn" href="#archive">Read stories</a><a class="btn g" href="#manage">Creator studio</a></div></div>
+<div class="ticker"><a href="#archive">Story archive</a><a href="#chars">Character directory</a><a href="#cont">Continuity guide</a><a href="#unis">All franchises</a><a href="#search">Search</a></div>
+<main><h2>Franchises</h2><div class="row">${db.fr.map(f=>cv(f,f.short,f.type,'#f-'+f.id)).join('')}</div>
+<div class="grid"><div><h2>The latest</h2>${sl(lat)}<a class="btn s" href="#archive">All stories</a></div>
+<div><h2>Continuity desk</h2><div class="pan"><p><b>${db.st.length}</b> story records<br><b>${db.ch.length}</b> characters<br><b>${lg}</b> legacy records awaiting review<br><b>${op}</b> open continuity notes</p><a class="btn s" href="#cont">Open guide</a></div></div></div></main>`};
+V.archive=()=>`<main><h1>Story archive</h1>${fbar('s')}<div id="res">${sl([...db.st].sort(so))}</div></main>`;
+V.chars=()=>`<main><h1>Character directory</h1>${fbar('c')}<div id="res">${cl(db.ch)}</div></main>`;
+V.unis=()=>`<main><h1>Franchises</h1><p>Each franchise is separate. Nothing is merged without the creator’s authorization.</p>${db.fr.map(f=>`<a class="it" href="#f-${f.id}"><i class="th" style="background:${f.color}">${esc(f.short.slice(0,3))}</i><div><small>${esc(f.type)}</small><h3>${esc(f.name)}</h3><small>${db.st.filter(s=>s.fid==f.id).length} stories · ${db.ch.filter(c=>c.fid==f.id).length} characters</small></div></a>`).join('')}</main>`;
+V.f=id=>{const f=F(id),st=db.st.filter(s=>s.fid==id).sort(so),ch=db.ch.filter(c=>c.fid==id);
+return `<main><div class="ban" style="background:linear-gradient(120deg,${f.color},#0a0a0d)"><span class="crumb" style="color:#fff9">${esc(f.type)}</span><h1>${esc(f.name)}</h1></div><p>${esc(f.desc)}</p>${kv('Storylines',f.lines)}<div class="warn">No crossover with another franchise is shown as fact unless the creator confirms it.</div>
+${cre?`<a class="btn s" href="#edit-f-${id}">Edit franchise</a>`:''}<h2>Stories</h2>${st.length?sl(st):'<div class="empty">No stories yet. The creator adds them in Creator Studio.</div>'}<h2>Characters</h2>${ch.length?cl(ch):'<div class="empty">No characters yet.</div>'}</main>`};
+V.s=id=>{const s=db.st.find(x=>x.id==id);if(!s)return '<main><div class="empty">Story not found. <a href="#archive">Back to archive</a></div></main>';
+const se=db.st.filter(x=>x.fid==s.fid).sort(so),i=se.indexOf(s),p=se[i-1],n=se[i+1],f=F(s.fid);
+const names=(s.chars||'').split(',').map(x=>x.trim()).filter(Boolean);
+const cl2=names.map(nm=>{const c=db.ch.find(c=>c.name.toLowerCase()==nm.toLowerCase());return c?`<a class="b s1" href="#c-${c.id}">${esc(nm)}</a>`:`<span class="b">${esc(nm)}</span>`}).join('');
+return `<main><div class="crumb"><a href="#f-${f.id}">${esc(f.short)}</a>${s.line?' / '+esc(s.line):''}</div>${s.cover?`<img src="${esc(s.cover)}" alt="Cover image for ${esc(s.title)}" style="display:block;width:100%;max-height:460px;object-fit:cover;margin:12px 0 20px">`:''}<h1>${esc(s.title)}</h1>${bd(s.status)}<span class="b">${esc(s.draft||'')}</span>${s.num?`<span class="b">Story ${esc(s.num)}</span>`:''}<span class="b">Order ${s.ord||'unplaced'}</span>
+${cre?`<p><a class="btn s" href="#edit-s-${s.id}">Edit story</a></p>`:''}${kv('Alternate titles',s.alt)}<p>${esc(s.summary)}</p>
+<div class="tools"><button onclick="rfs(-2)">A−</button><button onclick="rfs(2)">A+</button><button onclick="rth()">Reading theme</button></div>
+<div class="rd" id="rd">${s.body?esc(s.body):'<i>The original text has not been added yet. Awaiting the creator’s script.</i>'}</div>
+${cl2?`<h2>Characters</h2>${cl2}`:''}<h2>Continuity references</h2>${kv('Affiliations',s.affil)}${kv('Powers and limitations',s.powers)}${kv('Timeline placement',s.tl||'Unknown')}${kv('Relationships',s.rel)}${kv('Cross-references',s.xref)}${kv('Unresolved questions',s.q)}${kv('Change notes',s.hist)}
+${(cre||s.pub)&&s.notes?`<div class="pan"><b>Creator notes${s.pub?'':' (private, hidden from visitors)'}</b><br>${esc(s.notes)}</div>`:''}
+<div class="pn">${p?`<a class="btn s" href="#s-${p.id}">← Previous</a>`:'<span></span>'}${n?`<a class="btn s" href="#s-${n.id}">Next →</a>`:''}</div></main>`};
+V.c=id=>{const c=db.ch.find(x=>x.id==id);if(!c)return '<main><div class="empty">Character not found. <a href="#chars">Back</a></div></main>';
+const ap=db.st.filter(s=>(s.chars||'').toLowerCase().split(',').map(x=>x.trim()).includes(c.name.toLowerCase()));
+return `<main><div class="crumb"><a href="#f-${c.fid}">${esc(F(c.fid).short)}</a></div>${c.img?`<img class="pt" src="${c.img}" alt="">`:''}<h1>${esc(c.name)}</h1>${bd(c.status)}${cre?`<p><a class="btn s" href="#edit-c-${c.id}">Edit character</a></p>`:''}
+${kv('Aliases',c.alias)}${kv('Biography and origin',c.bio)||`<div class="kv"><b>Biography and origin</b>${aw}</div>`}${kv('Powers and limitations',c.powers)}${kv('Affiliations',c.affil)}${kv('Relationships',c.rel)}${kv('First appearance',c.first)}${kv('Feats and references',c.feats)}
+${cre&&c.notes?`<div class="pan"><b>Creator notes (private)</b><br>${esc(c.notes)}</div>`:''}<h2>Appears in</h2>${ap.length?sl(ap):'<div class="empty">No story lists this character yet.</div>'}</main>`};
+V.search=()=>`<main><h1>Search</h1><div class="fb"><input id="sq" value="${esc(sq)}" placeholder="Search stories and characters…" oninput="sq=this.value;sr()"></div><div id="res"></div></main>`;
+function sr(){const q=sq.toLowerCase(),a=q?db.st.filter(o=>hay(o).includes(q)):[],b=q?db.ch.filter(o=>hay(o).includes(q)):[];
+document.getElementById('res').innerHTML=q?`<h2>Stories (${a.length})</h2>${sl(a)}<h2>Characters (${b.length})</h2>${cl(b)}`:'<div class="empty">Type a title, name or word from the archive.</div>'}
+V.cont=()=>{const ap=db.ch.map(c=>[c,db.st.filter(s=>(s.chars||'').toLowerCase().split(',').map(x=>x.trim()).includes(c.name.toLowerCase()))]).filter(x=>x[1].length);
+const dup=[];db.st.forEach(s=>{if(s.num&&db.st.some(o=>o!==s&&o.fid==s.fid&&o.num==s.num))dup.push(s)});
+const nt=k=>db.notes.filter(n=>n.kind==k).map(n=>`<div class="it"><div><span style="${n.done?'text-decoration:line-through':''}">${esc(n.txt)}</span>${cre?`<br><button class="btn s g" onclick="ntog('${n.id}')">${n.done?'Reopen':'Mark resolved'}</button><button class="btn s g" onclick="ndel('${n.id}')">Delete</button>`:''}</div></div>`).join('')||'<div class="empty">None recorded.</div>';
+return `<main><h1>Continuity guide</h1><p>Only supplied facts appear here. Unknown stays unknown. The creator has final say on canon.</p>
+<details open><summary>Story chronology</summary><div>${[...db.st].sort((a,b)=>(+a.ord||9999)-(+b.ord||9999)).map(s=>`<p><a href="#s-${s.id}"><b>${esc(s.title)}</b></a> (${esc(F(s.fid).short)})<br><small>Order: ${s.ord||'unplaced'} · Timeline: ${esc(s.tl||'Unknown')}</small></p>`).join('')}</div></details>
+<details><summary>Character appearances</summary><div>${ap.map(([c,s])=>`<p><a href="#c-${c.id}"><b>${esc(c.name)}</b></a>: ${s.map(x=>`<a href="#s-${x.id}">${esc(x.title)}</a>`).join(', ')}</p>`).join('')||'<div class="empty">No appearances recorded.</div>'}</div></details>
+<details><summary>Franchise boundaries</summary><div>${db.fr.map(f=>`<p><b>${esc(f.name)}</b>: ${db.st.filter(s=>s.fid==f.id).length} stories, ${db.ch.filter(c=>c.fid==f.id).length} characters. Crossovers: none confirmed.</p>`).join('')}</div></details>
+<details open><summary>Contradictions</summary><div>${nt('Conflict')}${dup.length?`<div class="warn">Auto-check: duplicate story numbers in one franchise: ${dup.map(s=>esc(s.title)).join(', ')}</div>`:''}</div></details>
+<details open><summary>Unresolved questions</summary><div>${nt('Question')}${db.st.filter(s=>s.q).map(s=>`<p><a href="#s-${s.id}">${esc(s.title)}</a>: ${esc(s.q)}</p>`).join('')}</div></details>
+<details><summary>Legacy material awaiting review</summary><div>${sl(db.st.filter(s=>s.status.startsWith('LEGACY')))}</div></details>
+${cre?`<h2>Add a note</h2><div class="fb"><select id="nk"><option>Conflict</option><option>Question</option></select><input id="nt" placeholder="Describe the conflict or question"><button class="btn s" onclick="nadd()">Add note</button></div>`:'<p class="empty">Turn on Creator mode to add or resolve notes.</p>'}</main>`};
+const SC={s:{k:'st',t:'Story',f:[['title','Exact title','t'],['cover','Story cover image','i'],['alt','Alternate titles','t'],['fid','Franchise','f'],['line','Storyline','t'],['status','Canon status','c'],['draft','Draft / publication status','d'],['num','Story number','n'],['ord','Reading order','n'],['summary','Summary','a'],['body','Original text (line breaks kept)','A'],['chars','Characters (comma-separated names)','t'],['affil','Affiliations','t'],['powers','Powers and limitations','a'],['tl','Timeline placement','t'],['rel','Relationships','a'],['xref','Cross-references','a'],['q','Unresolved continuity questions','a'],['hist','Change notes','a'],['notes','Private creator notes','a'],['pub','Show creator notes on the public story page','b']]},
+c:{k:'ch',t:'Character',f:[['name','Name','t'],['alias','Aliases','t'],['fid','Franchise','f'],['status','Canon status','c'],['bio','Biography and origin','a'],['powers','Powers and limitations','a'],['affil','Affiliations','t'],['rel','Relationships','a'],['first','First appearance','t'],['feats','Feats and continuity references','a'],['img','Portrait','i'],['notes','Private creator notes','a']]},
+f:{k:'fr',t:'Franchise',f:[['short','Short name','t'],['name','Full name','t'],['type','Type','t'],['color','Colour (hex)','t'],['lines','Storylines','t'],['desc','Description','A']]}};
+function form(t,id){const S=SC[t],o=id?db[S.k].find(x=>x.id==id):{};if(!o)return '<main><div class="empty">Record not found.</div></main>';tmpImg=null;tmpImgFile=null;
+const fl=S.f.map(([k,l,ty])=>{const v=o[k]==null?'':o[k];let h;
+if(ty=='f')h=`<select name="${k}">${db.fr.map(f=>`<option value="${f.id}"${v==f.id?' selected':''}>${esc(f.name)}</option>`).join('')}</select>`;
+else if(ty=='c')h=`<select name="${k}">${ST.map(s=>`<option${v==s?' selected':''}>${esc(s)}</option>`).join('')}</select>`;
+else if(ty=='d')h=`<select name="${k}">${DR.map(s=>`<option${v==s?' selected':''}>${s}</option>`).join('')}</select>`;
+else if(ty=='n')h=`<input name="${k}" type="number" value="${esc(v)}">`;
+else if(ty=='a'||ty=='A')h=`<textarea name="${k}" class="${ty=='A'?'big':''}">${esc(v)}</textarea>`;
+else if(ty=='b')return `<label class="c"><input type="checkbox" name="${k}"${v?' checked':''}> ${l}</label>`;
+else if(ty=='i')h=`<input type="file" name="${k}_file" accept="image/*" onchange="pimg(this)"><input type="hidden" name="${k}" value="${esc(v)}">${v?`<p><img src="${esc(v)}" alt="Current image" style="max-width:180px;max-height:180px;object-fit:contain"></p>`:''}<small>Upload an image up to 5 MB. It will be stored in the studio cloud.</small>`;
+else h=`<input name="${k}" value="${esc(v)}" style="width:100%">`;
+return `<label>${l}</label>${h}`}).join('');
+return `<main><h1>${id?'Edit':'New'} ${S.t.toLowerCase()}</h1><div class="warn">Editing mode. Visitors see none of this.</div><form id="fm" onsubmit="return false">${fl}</form><p><button class="btn" onclick="sv('${t}','${id||''}')">Save ${S.t.toLowerCase()}</button><a class="btn g" href="#manage">Cancel</a>${id?`<button class="btn g" onclick="del('${t}','${id}')">Delete</button>`:''}</p></main>`}
+function pimg(e){const f=e.files?.[0];if(!f)return;if(f.size>5*1024*1024){toast('Image over 5 MB. Choose a smaller one.');e.value='';return}tmpImgFile=f}
+async function sv(t,id){const S=SC[t],fm=document.getElementById('fm'),o=id?db[S.k].find(x=>x.id==id):{id:t+Date.now().toString(36)};
+const key=t=='s'?'title':t=='c'?'name':'short';if(!fm.elements[key].value.trim())return toast('Enter a '+key+' first');
+S.f.forEach(([k,l,ty])=>{const e=fm.elements[k];if(ty=='b')o[k]=e.checked;else if(ty!='i')o[k]=e.value});
+try{if(tmpImgFile){const field=t==='s'?'cover':'img';if(t==='f')throw new Error('Images are not enabled for franchise records.');o[field]=await uploadImage(tmpImgFile,t==='s'?'stories':'characters',o.id);tmpImgFile=null;tmpImg=o[field];}o.u=Date.now();if(!id)db[S.k].push(o);save();if(t==='s'){await cloudSaveStory(o);toast('Story and image saved to cloud');}else if(t==='c'){await cloudSaveCharacter(o);toast('Character profile and portrait saved to cloud. Private notes stay on this device.');}else toast('Franchise saved locally.');location.hash=t==='s'?'s-'+o.id:t==='c'?'c-'+o.id:'f-'+o.id}catch(e){toast('Save failed: '+(e.message||'Check connection and image permissions.'))}}
+function del(t,id){if(!confirm('Delete this record permanently? Export a backup first if unsure.'))return;const k=SC[t].k;db[k]=db[k].filter(x=>x.id!=id);save();if(t=='s')cloudDeleteStory(id).then(()=>toast('Story deleted from cloud')).catch(e=>toast('Deleted locally, cloud error: '+e.message));else if(t=='c')cloudDeleteCharacter(id).then(()=>toast('Character deleted from cloud')).catch(e=>toast('Deleted locally, cloud error: '+e.message));else toast('Deleted locally.');location.hash='manage'}
+V.edit=id=>cre?form(id[0],id.slice(2)):lock();V.new=id=>cre?form(id,''):lock();
+const lock=()=>'<main><div class="warn">Turn on Creator mode (top right) to edit. This is a switch in a local prototype, not a protected login.</div></main>';
+V.manage=()=>{if(!cre)return `<main><h1>Creator studio</h1><div class="warn"><b>Creator sign-in required.</b> Visitors can read published stories without an account. Only the Supabase account marked with the creator role can manage the cloud archive. Never share your password or any secret/service-role key.</div><div class="pan"><h2>Creator login</h2><label for="creator-email">Creator email</label><input id="creator-email" type="email" autocomplete="username" style="width:100%" placeholder="Your authorized email"><label for="creator-password">Password</label><input id="creator-password" type="password" autocomplete="current-password" style="width:100%"><p><button id="creator-login-btn" class="btn" onclick="signInCreator()">Sign in</button></p><small>Sign in with the account you created in Supabase and assigned the studio_role = creator app metadata.</small></div><h2>Local backup</h2><button class="btn s" onclick="exp()">Export backup</button></main>`;
+const L=(t,a,n)=>`<h2>${t}</h2>${a.map(x=>`<div class="it"><div style="flex:1"><b>${esc(x[n])}</b></div><a class="btn s g" href="#edit-${t[0].toLowerCase()}-${x.id}">Edit</a></div>`).join('')||'<div class="empty">Nothing yet.</div>'}`;
+return `<main><h1>Creator studio</h1><div class="warn"><b>Authenticated creator mode.</b> Stories are saved to Supabase. A story becomes public only when its “Draft / publication status” is set to “Published”. Character profiles are saved to Supabase; character private notes and franchises remain local to this browser unless backed up.</div><p><button class="btn g" onclick="signOutCreator()">Sign out</button></p><a class="btn" href="#new-s">+ Story</a><a class="btn" href="#new-c">+ Character</a><a class="btn" href="#new-f">+ Franchise</a>
+<h2>Cloud import</h2><p>Choose your exported <b>mws-backup.json</b> to upload its stories and character profiles. This is an explicit action; signing in does not automatically import a backup.</p><label>Import backup stories and characters to cloud</label><input type="file" accept=".json,application/json" onchange="cloudImportFile(this)"><button class="btn s g" onclick="cloudLoadStories()">Refresh cloud stories</button>
+<h2>Local backup</h2><button class="btn s" onclick="exp()">Export backup</button><label>Import backup (file)</label><input type="file" accept=".json,application/json" onchange="impF(this)"><label>Or paste backup JSON</label><textarea id="bk" placeholder="Export fills this box. Copy it somewhere safe, or paste a backup here."></textarea><p><button class="btn s g" onclick="impT()">Import pasted JSON locally</button><button class="btn s g" onclick="rst()">Reset to sample archive</button></p><p class="crumb">Cloud import uploads stories and character profiles. Character private notes, franchises and continuity notes remain local to this browser and its backup.</p>${L('Cloud stories',[...db.st].sort(so),'title')}${L('Characters',db.ch,'name')}${L('Franchises',db.fr,'name')}</main>`};
+async function cloudImportFile(e){const f=e.files?.[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d||d.app!=='mws'||!Array.isArray(d.st))throw new Error('This is not a valid MWS backup JSON.');const chars=Array.isArray(d.ch)?d.ch:[];if(!confirm('Upload '+d.st.length+' stories and '+chars.length+' character profiles to Supabase? Matching IDs will be updated. Only stories marked Published become public. Character private notes are not uploaded.'))return;await cloudImportStories(d.st);let done=0;for(const c of chars){if(!c||!c.id||!c.name)continue;if(typeof c.img==='string'&&c.img.startsWith('data:image/')){const blob=await (await fetch(c.img)).blob();const ext=(blob.type.split('/')[1]||'png').replace('jpeg','jpg');c.img=await uploadImage(new File([blob],'portrait.'+ext,{type:blob.type}),'characters',c.id)}await cloudSaveCharacter(c);done++}await cloudLoadCharacters();toast('Uploaded '+d.st.length+' stories and '+done+' characters.')}catch(err){toast(err.message||'Could not import backup.')}finally{e.value=''}}
+function exp(){const j=JSON.stringify(db,null,1),b=document.getElementById('bk');b.value=j;b.select();try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([j],{type:'application/json'}));a.download='mws-backup.json';a.click()}catch(e){}try{navigator.clipboard.writeText(j)}catch(e){}toast('Backup ready. Copy the text from the box.')}
+function mg(t){let d;try{d=JSON.parse(t)}catch(e){return toast('That is not valid JSON')}if(!d||d.app!='mws')return toast('Not a studio backup');let a=0,s=0;
+['fr','st','ch','notes'].forEach(k=>(d[k]||[]).forEach(x=>{if(!x||!x.id)return;if(db[k].some(y=>y.id==x.id))s++;else{db[k].push(x);a++}}));save();toast(`Added ${a}, skipped ${s} existing`);R()}
+function impF(e){const f=e.files[0];if(!f)return;const r=new FileReader();r.onload=()=>mg(r.result);r.readAsText(f)}
+function impT(){mg(document.getElementById('bk').value)}
+function rst(){if(confirm('Replace everything with the sample archive? Your own entries will be lost unless exported.')){db=seed();save();toast('Reset');R()}}
+function nadd(){const t=document.getElementById('nt').value.trim();if(!t)return toast('Write the note first');db.notes.push({id:'n'+Date.now().toString(36),kind:document.getElementById('nk').value,txt:t,done:false});save();R()}
+function ntog(id){const n=db.notes.find(x=>x.id==id);n.done=!n.done;save();R()}
+function ndel(id){db.notes=db.notes.filter(x=>x.id!=id);save();R()}
+let fs=18,rt=0;function rfs(d){fs=Math.max(14,Math.min(32,fs+d));document.getElementById('rd').style.setProperty('--fs',fs+'px')}
+function rth(){rt=(rt+1)%3;document.getElementById('rd').className='rd '+['','sep','blk'][rt]}
+function tTh(){const r=document.documentElement,d=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');r.dataset.theme=d=='dark'?'light':'dark'}
+function tCre(){if(cre)signOutCreator();else location.hash='manage'}
+function cm(){const e=document.getElementById('cm');if(e)e.innerHTML='CREATOR: <b>'+(cre?'SIGNED IN':'SIGN IN')+'</b>'}
+function R(){const h=location.hash.slice(1)||'home',p=h.split('-'),t=p[0],id=p.slice(1).join('-');let v;
+try{v=(V[t]||V.home)(id)}catch(e){v='<main><h2>Something went wrong</h2><p>'+esc(e.message)+'</p></main>'}
+document.getElementById('app').innerHTML=v;document.querySelectorAll('nav a').forEach(a=>{const x=a.getAttribute('href').slice(1);a.classList.toggle('on',x==t||(t=='s'&&x=='archive')||(t=='c'&&x=='chars')||(t=='f'&&x=='unis'))});
+if(t=='search')sr();scrollTo(0,0)}
+db=load();cm();addEventListener('hashchange',R);R();
+const supabaseScript=document.createElement('script');supabaseScript.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';supabaseScript.onload=()=>{cloudInit();checkCreatorSession()};supabaseScript.onerror=()=>{document.getElementById('cloud-label').textContent='Cloud library unavailable · check internet';};document.head.appendChild(supabaseScript);
+</script></body></html>
