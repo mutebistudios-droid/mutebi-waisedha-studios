@@ -1,170 +1,1066 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MUTEBI WAISEDHA STUDIOS | Worlds. Stories. Legacy.</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
-<style>
-:root{--bg:#fff;--fg:#14141a;--mut:#6b6b76;--pan:#f1f1f4;--line:#dcdce2;--red:#d6232a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e12;--fg:#f2f2f5;--mut:#9a9aa6;--pan:#1a1a21;--line:#2a2a33}}
-:root[data-theme="dark"]{--bg:#0e0e12;--fg:#f2f2f5;--mut:#9a9aa6;--pan:#1a1a21;--line:#2a2a33}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 "Source Sans 3",system-ui,sans-serif;overflow-x:hidden}
-h1,h2,h3,.hd,nav a,.b,button,.btn{font-family:Oswald,Impact,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.04em}
-a{color:inherit;text-decoration:none}
-.util{background:#000;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:6px 14px;font-size:12px}
-.util button{background:none;border:0;color:#fff;font-size:12px;cursor:pointer;padding:4px}
-header{display:flex;align-items:center;justify-content:center;position:relative;padding:8px 14px;background:#111;border-top:1px solid #333}
-.logo{display:flex;align-items:center;gap:8px;color:#fff}.logo b{background:var(--red);padding:2px 12px;font-size:28px;line-height:1.1;font-family:Oswald,Impact,sans-serif}
-.logo span{font-family:Oswald,sans-serif;font-size:13px;letter-spacing:.12em;max-width:110px;line-height:1.15}
-.sb{position:absolute;right:10px;background:none;border:0;color:#fff;font-size:22px;cursor:pointer}
-nav{display:flex;gap:2px;overflow-x:auto;background:#111;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:5;padding-top:env(safe-area-inset-top,0px)}
-nav a{color:#fff;padding:11px 14px;font-size:13px;white-space:nowrap}nav a.on{background:var(--red)}
-main{max-width:980px;margin:0 auto;padding:20px 16px 40px}
-h1{font-size:34px;margin:.2em 0 .4em}h2{font-size:22px;margin:1.4em 0 .6em;border-left:5px solid var(--red);padding-left:10px}
-.hero{background:radial-gradient(ellipse at 80% 20%,#7a1015 0,transparent 55%),linear-gradient(115deg,#050507 55%,#1c0b0d);color:#fff;padding:54px 18px 44px;min-height:62vh;display:flex;flex-direction:column;justify-content:center}
-.hero>*{max-width:980px;width:100%;margin-left:auto;margin-right:auto}
-.hero small{font-family:Oswald,sans-serif;letter-spacing:.18em;color:#ff7b80;font-size:12px}
-.hero h1{font-size:clamp(40px,11vw,92px);line-height:.95;margin:.25em auto .3em;font-weight:700}
-.hero p{max-width:520px;color:#d4d4dc;margin:0 auto 22px;margin-left:auto}
-.btn,button.btn{display:inline-block;background:var(--red);color:#fff;padding:11px 22px;border:0;font-size:14px;cursor:pointer;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);margin:0 8px 0 0}
-.btn.g{background:#2a2a33}.btn.s{padding:7px 16px;font-size:12px}
-.ticker{display:flex;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--bg)}
-.ticker a{padding:14px 18px;font-size:13px;white-space:nowrap;border-top:3px solid transparent;font-family:Oswald,sans-serif;text-transform:uppercase}.ticker a:first-child{border-color:var(--red);}
-.row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
-.card{flex:0 0 160px;scroll-snap-align:start}
-.cv{aspect-ratio:2/3;display:flex;flex-direction:column;justify-content:flex-end;padding:10px;color:#fff;font-family:Oswald,Impact,sans-serif;font-size:24px;line-height:1;text-transform:uppercase;background:linear-gradient(160deg,var(--red),#000 85%);border:1px solid #fff1}
-.card p{font-size:12px;margin:6px 0 0;font-family:Oswald,sans-serif;text-transform:uppercase}
-.card small{color:var(--mut);display:block;font-size:11px;text-transform:none;font-family:"Source Sans 3",sans-serif}
-.grid{display:grid;gap:22px}@media(min-width:760px){.grid{grid-template-columns:2fr 1fr}}
-.it{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
-.th{flex:0 0 96px;height:68px;display:flex;align-items:center;justify-content:center;color:#fff;font:700 20px Oswald,sans-serif;font-style:normal;overflow:hidden}
-.it small{color:var(--mut);font:12px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.06em}.it h3{margin:2px 0;font-size:17px;line-height:1.2;text-transform:none;letter-spacing:0}
-.pan{background:var(--pan);padding:16px;border-top:3px solid var(--red)}
-.b{display:inline-block;padding:2px 8px;font-size:11px;color:#fff;background:#555;margin:2px 4px 2px 0}
-.s0{background:#1a8a4a}.s1{background:#2a6fdb}.s2{background:#7a4dd8}.s3{background:#c27a00}.s4{background:#777}
-.fb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
-input,select,textarea{font:inherit;padding:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:0;max-width:100%}
-.fb input{flex:1 1 180px}textarea{width:100%;min-height:80px}textarea.big{min-height:260px}
-label{display:block;font:600 13px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.05em;margin:14px 0 4px}
-label.c{display:flex;gap:8px;align-items:center}
-.empty{padding:18px;border:1px dashed var(--line);color:var(--mut)}
-.warn{background:#fff3cd;color:#4a3a00;padding:12px;border-left:5px solid #c27a00;margin:12px 0;font-size:14px}
-.rd{background:var(--pan);padding:18px;margin:14px 0;font-size:calc(var(--fs,18px));line-height:1.75;white-space:pre-wrap;font-family:Georgia,serif;max-width:68ch}
-.rd.sep{background:#f4ecd8;color:#3b2f1c}.rd.blk{background:#000;color:#e6e6e6}
-.tools{display:flex;gap:6px;flex-wrap:wrap}.tools button{padding:6px 12px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
-details{border:1px solid var(--line);margin:10px 0}summary{padding:12px;cursor:pointer;font:600 15px Oswald,sans-serif;text-transform:uppercase;background:var(--pan)}details>div{padding:12px}
-.ban{padding:22px 16px;color:#fff;margin:-20px -16px 18px}.ban h1{margin:0}.crumb{font-size:13px;color:var(--mut)}
-.kv{margin:8px 0}.kv b{display:block;font:600 12px Oswald,sans-serif;text-transform:uppercase;color:var(--mut);letter-spacing:.06em}
-.kv span{white-space:pre-wrap}.pn{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
-footer{background:#111;color:#bbb;padding:26px 16px;font-size:13px}footer>div{max-width:980px;margin:auto}footer a{color:#fff;margin-right:14px}
-#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#000;color:#fff;padding:10px 18px;display:none;z-index:9;border-left:4px solid var(--red)}
-.pt{width:100px;height:100px;object-fit:cover;float:right;margin:0 0 8px 12px}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MUTEBI WAISEDHA STUDIOS | Worlds. Stories. Legacy.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090c;
+      --bg-soft: #121217;
+      --panel: #17171d;
+      --panel-2: #1d1d26;
+      --ink: #f4f4f6;
+      --muted: #a9a9b7;
+      --line: #2d2d35;
+      --red: #d71920;
+      --red-soft: #a60f1c;
+      --shadow: rgba(0, 0, 0, 0.35);
+      --max: 1180px;
+    }
 
-.introline{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:12px 0 2px}.introline p{margin:0;color:var(--mut)}.eyebrow{font:600 11px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
-/* MWS studio redesign: stronger editorial hierarchy, original CSS-built artwork, and mobile polish */
-:root{--red:#d71920;--pan:#17171d;--line:#303039;--bg:#09090c;--fg:#f4f4f6;--mut:#aaaab5;color-scheme:dark}
-:root[data-theme="light"]{--bg:#f5f4f2;--fg:#15151a;--mut:#666671;--pan:#fff;--line:#dddde3;color-scheme:light}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f5f4f2;--fg:#15151a;--mut:#666671;--pan:#fff;--line:#dddde3;color-scheme:light}}
-body{background:var(--bg);letter-spacing:.005em}
-.util{padding:7px max(16px,calc((100vw - 1180px)/2));background:#050506;color:#c7c7ce;border-bottom:1px solid #27272d}
-header{justify-content:flex-start;padding:13px max(16px,calc((100vw - 1180px)/2));min-height:72px;background:#09090c;border-top:0}
-.logo{gap:12px}.logo b{font-size:30px;padding:5px 13px;box-shadow:5px 5px 0 #5b0b10}.logo span{max-width:none;font-size:14px;letter-spacing:.16em}
-nav{justify-content:center;background:#09090c;border-bottom:1px solid #34343d;box-shadow:0 8px 22px #0002}
-nav a{padding:13px 17px;font-size:12px;transition:background .18s,color .18s}nav a:hover,nav a.on{background:var(--red);color:#fff}
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:520px;padding:clamp(54px,9vw,112px) max(20px,calc((100vw - 1180px)/2));background:radial-gradient(ellipse at 78% 42%,#a60f1c 0,#09090c 48%,#09090c 100%)}
-.hero:before{content:"";position:absolute;z-index:-1;right:-4%;top:7%;width:min(54vw,650px);height:88%;opacity:.82;background:linear-gradient(145deg,transparent 0 28%,#ffffff09 28% 29%,transparent 29% 100%)}
-.hero:after{content:"M W";position:absolute;z-index:-1;right:7%;top:20%;font:700 clamp(100px,22vw,260px)/.9 Oswald,Impact,sans-serif;letter-spacing:-.09em;color:#ffffff08;transform:skewY(-8deg)}
-.hero>*{max-width:1180px;position:relative}.hero small{color:#ff8c91;font-size:12px;letter-spacing:.22em}.hero h1{max-width:850px;font-size:clamp(44px,8vw,100px);letter-spacing:-.035em;line-height:.9}
-.btn{clip-path:none;border-radius:2px;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-2px);background:#f0343b}.btn.g:hover{background:#303039}
-.ticker{background:var(--bg);border-bottom:1px solid var(--line);justify-content:center}.ticker a{font-size:12px;padding:15px 20px;color:var(--mut)}.ticker a:hover{color:var(--red)}
-main{max-width:1180px;padding:32px 20px 52px}h1{letter-spacing:-.02em}h2{margin-top:1.8em;margin-bottom:.8em;border-left:4px solid var(--red);font-size:23px}
-.row{gap:16px;padding:4px 2px 18px}.card{flex-basis:clamp(170px,20vw,225px);transition:transform .2s}.card:hover{transform:translateY(-5px)}
-.cv{position:relative;isolation:isolate;aspect-ratio:3/4;border:1px solid #ffffff24;padding:16px;background-color:#17171d!important;overflow:hidden;font-size:clamp(25px,3vw,36px);letter-spacing:-.04em}
-.cv:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 76% 25%,#ffffff35 0 1px,transparent 2px),radial-gradient(ellipse at 70% 42%,#ffffff18,transparent 45%)}
-.cv:after{content:"";position:absolute;z-index:-1;right:-12%;top:12%;width:65%;height:64%;border:2px solid #ffffff22;transform:rotate(28deg);box-shadow:0 0 0 18px #ffffff08,0 0 0 38px #ffffff05}
-.card p{font-size:13px;letter-spacing:.08em}.card small{font-family:"Source Sans 3",sans-serif;font-size:12px;color:var(--mut);letter-spacing:0}
-.grid{gap:32px}.pan{border:1px solid var(--line);border-top:3px solid var(--red);background:var(--pan);border-radius:3px;padding:20px}.it{padding:16px 0;align-items:center}.it:hover h3{color:var(--red)}
-input,select,textarea{border-radius:3px;padding:12px}.btn:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #ff62a1;outline-offset:2px}
-.warn{background:#2a2110;color:#ffe7a6;border-color:#c27a00;border-radius:2px}.empty{border-radius:3px;background:var(--pan)}
-.ban{border-radius:3px;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 22px!important;border:1px solid #ffffff15}.ban h1{font-size:clamp(30px,6vw,56px);text-shadow:0 2px 0 #000}
-footer{border-top:3px solid var(--red);background:#070709;color:#aaaab5;padding:34px 20px}footer>div{max-width:1180px}footer p:first-child{display:flex;gap:18px;flex-wrap:wrap}footer a:hover{color:var(--red)}
-#toast{border-radius:3px;box-shadow:0 8px 28px #0008;max-width:calc(100vw - 24px)}
-@media(max-width:640px){.util{font-size:11px;padding:6px 12px}header{min-height:64px;padding:10px 12px}.logo b{font-size:25px}.logo span{font-size:11px;max-width:175px}.sb{right:8px}nav{justify-content:flex-start;padding-left:10px}nav a{padding:12px 14px}.hero{min-height:420px}main{padding:22px 12px 36px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Source Sans 3", Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-</style></head><body>
-<div class="util"><span>Local prototype · saves in this browser only</span><button onclick="tCre()" id="cm"></button></div>
-<header><a class="logo" href="#home"><b>MWS</b><span>MUTEBI WAISEDHA STUDIOS</span></a><button class="sb" onclick="location.hash='search'" aria-label="Search">&#9906;</button></header>
-<nav><a href="#home">Home</a><a href="#archive">Stories</a><a href="#chars">Characters</a><a href="#unis">Franchises</a><a href="#cont">Continuity</a><a href="#manage">Creator Studio</a></nav>
-<div id="app"></div>
-<footer><div><p><a href="#archive">Story Archive</a><a href="#chars">Characters</a><a href="#cont">Continuity Guide</a><a href="#manage">Creator Studio</a><a href="#" onclick="tTh();return false">Theme</a></p>
-<p>MUTEBI WAISEDHA STUDIOS. All stories, characters and worlds belong to their creator, who alone decides what is canon. This is a local prototype: it is not deployed to a public domain, has no canonical landing page, and is shown here only as a browser-only editing prototype.</p></div></footer>
-<div id="toast"></div>
-<script>
-const ST=['CANON','CANON-COMPLIANT','NON-CANON / ORIGINAL','LEGACY / NEEDS REVIEW','INCOMPLETE SOURCE'],DR=['Not started','Draft','Complete','Published'],K='mws_v1';
-const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let db,cre=false,sq='',tmpImg=null;
-function seed(){const now=Date.now();let n=0,m=0;
-const S=(title,fid,line,status,num,summary,x)=>Object.assign({id:'s'+(++n),title,alt:'',fid,line,status,draft:'Not started',num,ord:num,summary,body:'',chars:'',affil:'',powers:'',tl:'',rel:'',xr:'',notes:'',pub:false,u:now},x||{});
-const C=(name,fid,bio,x)=>Object.assign({id:'c'+(++m),name,alias:'',fid,status:'INCOMPLETE SOURCE',bio:bio||'',powers:'',affil:'',rel:'',first:'',feats:'',img:'',notes:'',u:now},x||{});
-const NF='Name appears in the creator’s material; biography not supplied.';
-return{app:'mws',
-fr:[
-{id:'mwu',short:'MWU',name:'MUTEBI WAISEDHA UNIVERSE',type:'Fictional universe',color:'#c4161c',lines:'Waisedha, Luvicebi, BORNEFAITH',desc:'The shared superhero and speculative-fiction universe of MWS. It includes storylines, continuity notes, and legacy material.'},
-{id:'zs',short:'0 STATE',name:'0 STATE',type:'Fictional universe',color:'#1f5fc7',lines:'',desc:'A separate superhero/speculative franchise with its own tier and speed mechanics.'},
-{id:'kd',short:'KOLONIAL DECREE',name:'KOLONIAL DECREE',type:'Fighting-game franchise',color:'#c27a00',lines:'Light Speed (High Tier side story)',desc:'An independent fighting-game IP with its own worldbuilding and side-story logic.'},
-{id:'s7',short:'STUDIO 7 AFRICA',name:'STUDIO 7 AFRICA',type:'Film initiative',color:'#12805c',lines:'',desc:'The creator’s short-film and screen-story initiative.'},
-{id:'vs',short:'VERSUS',name:'VERSUS',type:'Product / app concept',color:'#6b36b8',lines:'',desc:'A battleboarding and database app concept for comparing fictional characters across franchises.'}
-],
-st:[
-S('Waisedha','mwu','Waisedha','LEGACY / NEEDS REVIEW','','Foundation storyline of the MWU. Older material may need revision before it is designated current canon.'),
-S('Luvicebi','mwu','Luvicebi','INCOMPLETE SOURCE','','Named storyline within MWU development history. No source text supplied.'),
-S('BORNEFAITH','mwu','BORNEFAITH','INCOMPLETE SOURCE','','Named storyline within MWU development history. No source text supplied.'),
-S('Waisedha: Vogard War','mwu','Waisedha','INCOMPLETE SOURCE','','Referenced title. Plot not established. Awaiting source material.'),
-S('Waisedha: Botanical War','mwu','Waisedha','INCOMPLETE SOURCE','','Referenced title. Plot not established. Awaiting source material.'),
-S('CARDIAC / A.N.T.I.','mwu','Waisedha','LEGACY / NEEDS REVIEW',7,'Older Waisedha material. Known names: CARDIAC, Phalanx, The Cyrense Box, Khore, Vantage, Vixen, Vankhore, Vangorl, Vandal Beast, etc.')
-],
-ch:[
-C('Wildbat','mwu',''),C('Andriner','mwu',''),C('Silent','mwu',''),C('CARDIAC','mwu','Established name in the older Waisedha material.'),C('Phalanx','mwu','Established name in the older Waisedha material.'),C('Khore','mwu',''),C('Vantage','mwu',''),C('Vixen','mwu',''),C('Gorspeed','mwu','Not the same as Gravitor (0 STATE).'),C('Gravator','mwu',''),C('Khardum','mwu','')
-],
-notes:[
-{id:'n1',kind:'Conflict',txt:'Vangorl is described as a generator and as a clone. Creator to decide which holds.',done:false},
-{id:'n2',kind:'Question',txt:'Precise links among DeathClock, IDAA, Swordizz and Oxido-83B are undocumented.',done:false}
-],u:now}}
-function load(){try{const r=localStorage.getItem(K);if(r){const d=JSON.parse(r);if(d&&d.st)return d}}catch(e){}return seed()}
-function save(){try{localStorage.setItem(K,JSON.stringify(db))}catch(e){toast('Browser storage unavailable. Export a backup.')}}
-function toast(t){const e=document.getElementById('toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2600)}
-const F=id=>db.fr.find(f=>f.id==id)||{short:'Unassigned',name:'Unassigned',color:'#555'};
-const bd=s=>`<span class="b s${ST.indexOf(s)<0?4:ST.indexOf(s)}">${esc(s||'UNSET')}</span>`;
-const so=(a,b)=>(a.fid>b.fid?1:a.fid<b.fid?-1:0)||(+a.ord||9999)-(+b.ord||9999)||a.title.localeCompare(b.title);
-const hay=o=>Object.keys(o).filter(k=>k!='notes'&&k!='img'&&k!='id').map(k=>o[k]).join(' ').toLowerCase();
-const kv=(l,v)=>v?`<div class="kv"><b>${l}</b><span>${esc(v)}</span></div>`:'';
-const aw='<i style="color:var(--mut)">Details awaiting creator input</i>';
-function cv(f,t,sub,h){return `<a class="card" href="${h}"><div class="cv" style="background:linear-gradient(160deg,${f.color},#0a0a0d 85%)">${esc(t)}</div><p>${esc(t)}<small>${esc(sub)}</small></p></a>`}
-function sl(a){return a.length?a.map(s=>`<a class="it" href="#s-${s.id}"><i class="th" style="background:linear-gradient(135deg,${F(s.fid).color},#111)">${esc(F(s.fid).short.slice(0,3))}</i><div><small>${esc(F(s.fid).short)} / ${esc(s.line||'Unassigned')}</small><h3>${esc(s.title)}</h3><p>${esc(s.summary||'No synopsis added yet.')}</p></div></a>`).join(''):'<div class="empty">No stories available.</div>'}
-function cl(a){return a.length?a.map(c=>`<a class="it" href="#c-${c.id}"><i class="th" style="background:linear-gradient(135deg,${F(c.fid).color},#111)">${esc(c.name.slice(0,2).toUpperCase())}</i><div><small>${esc(F(c.fid).short)}</small><h3>${esc(c.name)}</h3><p>${esc(c.bio||'No biography provided yet.')}</p></div></a>`).join(''):'<div class="empty">No characters available.</div>'}
-function fbar(k){return `<div class="fb"><input id="q" placeholder="Search…" oninput="flt('${k}')"><select id="ff" onchange="flt('${k}')"><option value="">All franchises</option>${db.fr.map(f=>`<option value="${f.id}">${esc(f.name)}</option>`).join('')}</select><select id="fs" onchange="flt('${k}')"><option value="">All statuses</option>${ST.map(s=>`<option value="${s}">${esc(s)}</option>`).join('')}</select></div>`}
-function flt(k){const q=document.getElementById('q').value.toLowerCase(),f=document.getElementById('ff').value,s=document.getElementById('fs').value;
-const a=db[k=='s'?'st':'ch'].filter(o=>(!f||o.fid==f)&&(!s||o.status==s)&&(!q||hay(o).includes(q)));if(k=='s')a.sort(so);document.getElementById('res').innerHTML=k=='s'?sl(a):cl(a)}
-const V={};
-V.home=()=>{const lat=[...db.st].sort((a,b)=>b.u-a.u).slice(0,6);
-return `<main><section class="hero"><small>AN INDEPENDENT STORY & ENTERTAINMENT STUDIO</small><h1>WORLDS.<br>STORIES.<br>LEGACY.</h1><p>MUTEBI WAISEDHA STUDIOS is home to original fictional worlds, character systems, and continuity material built by one creator with a long-form editorial vision.</p><div><a class="btn" href="#archive">Explore the archive</a><a class="btn g" href="#chars">Character directory</a></div></section><div class="ticker"><a href="#unis">Explore franchises</a><a href="#archive">Story archive</a><a href="#chars">Character directory</a><a href="#cont">Continuity guide</a></div><main><div class="introline"><span class="eyebrow">THE CREATOR-OWNED STORY WORLDS</span><p>Different worlds. Different rules. One creator-led studio.</p></div><h2>Explore our worlds</h2><div class="row">${db.fr.map(f=>cv(f,f.short,f.type,`#f-${f.id}`)).join('')}</div><div class="grid"><div><h2>From the story archive</h2>${sl(lat)}<a class="btn s" href="#archive">Browse all stories</a></div><div><h2>Inside the studio</h2><div class="pan"><p>Keep lore organised, protect franchise boundaries, and build each story one record at a time.</p><div class="pan"><p><strong>${db.st.length}</strong> stories catalogued</p><p><strong>${db.ch.length}</strong> characters tracked</p><p><strong>${db.fr.length}</strong> franchises mapped</p></div></div></div></div></main>`};
-V.archive=()=>`<main><h1>Story archive</h1>${fbar('s')}<div id="res">${sl([...db.st].sort(so))}</div></main>`;
-V.chars=()=>`<main><h1>Character directory</h1>${fbar('c')}<div id="res">${cl(db.ch)}</div></main>`;
-V.unis=()=>`<main><h1>Franchises</h1><p>Each franchise is separate. Nothing is merged without the creator’s authorization.</p>${db.fr.map(f=>`<a class="it" href="#f-${f.id}"><i class="th" style="background:linear-gradient(135deg,${f.color},#111)">${esc(f.short.slice(0,3))}</i><div><small>${esc(f.type)}</small><h3>${esc(f.name)}</h3><p>${esc(f.desc)}</p></div></a>`).join('')}</main>`;
-V.f=id=>{const f=F(id),st=db.st.filter(s=>s.fid==id).sort(so),ch=db.ch.filter(c=>c.fid==id);return `<main><div class="ban" style="background:linear-gradient(120deg,${f.color},#0a0a0d)"><span class="crumb" style="color:#fff9">${esc(f.type)}</span><h1>${esc(f.name)}</h1></div><p>${esc(f.desc)}</p><h2>Stories</h2>${st.length?sl(st):'<div class="empty">No stories yet.</div>'}<h2>Characters</h2>${ch.length?cl(ch):'<div class="empty">No characters yet.</div>'}</main>`};
-V.s=id=>{const s=db.st.find(x=>x.id==id);if(!s)return '<main><div class="empty">Story not found.</div></main>';
-const f=F(s.fid);return `<main><div class="crumb"><a href="#f-${f.id}">${esc(f.short)}</a>${s.line?' / '+esc(s.line):''}</div><h1>${esc(s.title)}</h1>${bd(s.status)}<span class="b">${esc(s.draft||'')}</span><p>${esc(s.summary)}</p><div class="rd" id="rd">${s.body?esc(s.body):'<i>The original text has not been added yet. Awaiting the creator’s script.</i>'}</div></main>`};
-V.c=id=>{const c=db.ch.find(x=>x.id==id);if(!c)return '<main><div class="empty">Character not found.</div></main>';
-return `<main><div class="crumb"><a href="#f-${c.fid}">${esc(F(c.fid).short)}</a></div><h1>${esc(c.name)}</h1>${bd(c.status)}${c.bio?`<p>${esc(c.bio)}</p>`:'<div class="empty">No biography supplied yet.</div>'}</main>`};
-V.search=()=>`<main><h1>Search</h1><div class="fb"><input id="sq" value="${esc(sq)}" placeholder="Search stories and characters…" oninput="sq=this.value;sr()"></div><div id="res"></div></main>`;
-function sr(){const q=sq.toLowerCase();const a=q?db.st.filter(o=>hay(o).includes(q)):[],b=q?db.ch.filter(o=>hay(o).includes(q)):[];document.getElementById('res').innerHTML=q?`<h2>Stories (${a.length})</h2>${sl(a)}<h2>Characters (${b.length})</h2>${cl(b)}`:'<div class="empty">Type a title, name or word from the archive.</div>'}
-V.cont=()=>`<main><h1>Continuity guide</h1><p>Only supplied facts appear here. Unknown stays unknown. The creator has final say on canon.</p><div class="pan"><h2>Franchises</h2>${db.fr.map(f=>`<p><b>${esc(f.name)}</b>: ${db.st.filter(s=>s.fid==f.id).length} stories, ${db.ch.filter(c=>c.fid==f.id).length} characters.</p>`).join('')}</div></main>`;
-V.manage=()=>`<main><h1>Creator studio</h1><div class="warn"><b>Local prototype.</b> Everything you save stays in this browser on this device. This is not secure storage, and this view is only for editing your prototype.</div><div class="empty">Creator tools are available in local browser mode only. To publish to GitHub Pages, upload the final site to the repository root and enable Pages from the repository settings.</div></main>`;
-const lock=()=>'<main><div class="warn">Turn on Creator mode (top right) to edit. This is a local prototype switch, not a secure login.</div></main>';
-function R(){const h=location.hash.slice(1)||'home',p=h.split('-'),t=p[0],id=p.slice(1).join('-');let v;try{v=(V[t]||V.home)(id)}catch(e){v='<main><h2>Something went wrong</h2><p>'+esc(e.message)+'</p></main>'}document.getElementById('app').innerHTML=v;document.querySelectorAll('nav a').forEach(a=>{const x=a.getAttribute('href').slice(1);a.classList.toggle('on',x==t||(t=='s'&&x=='archive')||(t=='c'&&x=='chars'))});if(t=='search')sr();scrollTo(0,0)}
-function tTh(){const r=document.documentElement,d=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');r.dataset.theme=d=='dark'?'light':'dark'}
-function tCre(){cre=!cre;cm();toast(cre?'Creator mode on':'Creator mode off');R()}
-function cm(){document.getElementById('cm').innerHTML='CREATOR MODE: <b>'+(cre?'ON':'OFF')+'</b>'}
-db=load();cm();addEventListener('hashchange',R);R();
-</script></body></html>
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    h1, h2, h3, nav, .tag, .btn, .chip {
+      font-family: "Oswald", Impact, sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .util {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 7px 20px;
+      background: #050506;
+      color: #d4d4dc;
+      border-bottom: 1px solid #27272d;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .util span:last-child {
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    .topbar {
+      padding: 16px 20px;
+      background: #09090c;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner, .nav-inner, .content, .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 52px;
+      height: 44px;
+      padding: 0 12px;
+      background: var(--red);
+      color: white;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1;
+      box-shadow: 5px 5px 0 #5b0b10;
+    }
+
+    .brand-text {
+      font-size: 14px;
+      line-height: 1.15;
+      letter-spacing: 0.14em;
+      color: #f6f6f8;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: #0a0a0c;
+      border-bottom: 1px solid var(--line);
+      padding: 0 20px;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 16px;
+      font-size: 12px;
+      color: #e6e6ea;
+      border-top: 3px solid transparent;
+      transition: 0.2s ease;
+      white-space: nowrap;
+    }
+
+    nav a:hover, nav a.active {
+      background: var(--red);
+      border-color: transparent;
+      color: white;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 78% 42%, var(--red-soft) 0%, #0a0a0d 45%, #09090c 100%);
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -5%;
+      top: 6%;
+      width: min(54vw, 650px);
+      height: 88%;
+      opacity: 0.8;
+      background: linear-gradient(145deg, transparent 0 25%, rgba(255,255,255,0.04) 25% 26%, transparent 26% 100%);
+    }
+
+    .hero::after {
+      content: "M W";
+      position: absolute;
+      right: 7%;
+      top: 16%;
+      font: 700 clamp(100px, 22vw, 250px)/0.9 "Oswald", Impact, sans-serif;
+      letter-spacing: -0.09em;
+      color: rgba(255,255,255,0.08);
+      transform: skewY(-8deg);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max);
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      color: #ff9ea3;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 8vw, 100px);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      margin: 0 0 18px;
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 0 0 24px;
+      color: #dfe0e6;
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border: none;
+      background: var(--red);
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+      border-radius: 2px;
+    }
+
+    .btn:hover { transform: translateY(-2px); background: #f0343b; }
+    .btn.secondary {
+      background: #2a2a33;
+    }
+    .btn.secondary:hover { background: #3a3a46; }
+
+    .ticker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      padding: 10px 20px;
+    }
+
+    .ticker a {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+    }
+
+    .content {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    .section-intro {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-intro p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      margin-top: 16px;
+    }
+
+    .card-row {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(120px, 1fr));
+      gap: 16px;
+      margin-top: 6px;
+    }
+
+    .mini-card {
+      display: block;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 14px 12px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .mini-card:hover { transform: translateY(-2px); border-color: var(--red); }
+    .mini-card .art {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 3 / 4;
+      margin-bottom: 10px;
+      font-size: clamp(24px, 2vw, 34px);
+      font-weight: 700;
+      color: white;
+      background: linear-gradient(160deg, var(--red), #0a0a0d 85%);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .mini-card p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--ink);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: "Oswald", Impact, sans-serif;
+    }
+    .mini-card small {
+      display: block;
+      color: var(--muted);
+      margin-top: 5px;
+      font-size: 12px;
+      text-transform: none;
+      letter-spacing: 0;
+      font-family: "Source Sans 3", sans-serif;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--red);
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin: 0 0 14px;
+      border-left: 4px solid var(--red);
+      padding-left: 12px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .list-item {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .list-item:last-child { border-bottom: 0; }
+    .thumb {
+      width: 92px;
+      min-width: 92px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--red), #111);
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .info small {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 10px;
+      color: var(--muted);
+    }
+    .info h3 {
+      margin: 4px 0 4px;
+      font-size: 18px;
+      letter-spacing: 0;
+      text-transform: none;
+      font-family: "Source Sans 3", sans-serif;
+      color: var(--ink);
+    }
+    .info p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .search-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .search-box input, .search-box select {
+      flex: 1 1 180px;
+      min-width: 0;
+      background: #111217;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      padding: 12px 14px;
+      font: inherit;
+    }
+
+    .page {
+      padding-top: 10px;
+    }
+    .page h1 {
+      font-size: clamp(30px, 6vw, 56px);
+      line-height: 0.95;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+    .page p.lead {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .crumb {
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(215,25,32,0.2);
+      color: #ffdfe2;
+      border: 1px solid rgba(215,25,32,0.55);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+
+    .story-body {
+      background: rgba(23,23,29,0.9);
+      border: 1px solid var(--line);
+      padding: 22px;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #f1f1f4;
+      margin-top: 18px;
+      white-space: pre-wrap;
+    }
+
+    .footer {
+      background: #070709;
+      color: var(--muted);
+      border-top: 3px solid var(--red);
+      padding: 32px 20px 40px;
+    }
+    .footer-inner {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .footer p {
+      margin: 0;
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    @media (max-width: 860px) {
+      .card-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid-2 { grid-template-columns: 1fr; }
+      .hero { min-height: 440px; }
+      .hero-inner { padding-top: 52px; padding-bottom: 52px; }
+      .util { justify-content: center; flex-direction: column; padding-top: 10px; padding-bottom: 10px; }
+      nav { justify-content: flex-start; overflow-x: auto; }
+    }
+
+    @media (max-width: 540px) {
+      .brand-text { font-size: 11px; }
+      .card-row { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .btn { width: 100%; }
+      .topbar, nav { padding-left: 12px; padding-right: 12px; }
+      .content { padding-left: 12px; padding-right: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="util">
+    <span>MUTEBI WAISEDHA STUDIOS</span>
+    <span>Original worlds · original stories · original futures</span>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#home" class="brand" aria-label="MUTEBI WAISEDHA STUDIOS home">
+        <span class="brand-mark">MWS</span>
+        <span class="brand-text">MUTEBI WAISEDHA<br>STUDIOS</span>
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#archive">Stories</a>
+    <a href="#chars">Characters</a>
+    <a href="#unis">Franchises</a>
+    <a href="#cont">Continuity</a>
+    <a href="#studio">Studio</a>
+  </nav>
+
+  <div id="app"></div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-links">
+          <a href="#archive">Story Archive</a>
+          <a href="#chars">Characters</a>
+          <a href="#cont">Continuity Guide</a>
+          <a href="#studio">Studio</a>
+        </div>
+        <p>MUTEBI WAISEDHA STUDIOS. Original stories, characters and creative worlds built across the MUTEBI WAISEDHA UNIVERSE, 0 STATE, KOLONIAL DECREE, and STUDIO 7 AFRICA.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const franchises = [
+      {
+        id: 'mwu',
+        short: 'MWU',
+        name: 'MUTEBI WAISEDHA UNIVERSE',
+        type: 'Shared fictional universe',
+        color: '#c4161c',
+        desc: 'The shared fictional universe at the heart of the studio, bringing together the core worlds, characters, and storylines of MUTEBI WAISEDHA STUDIOS.'
+      },
+      {
+        id: 'zs',
+        short: '0 STATE',
+        name: '0 STATE',
+        type: 'Separate original franchise',
+        color: '#1f5fc7',
+        desc: 'A distinct original franchise with its own rules, scale, and creative identity, separate from the main MWU continuity.'
+      },
+      {
+        id: 'kd',
+        short: 'KOLONIAL DECREE',
+        name: 'KOLONIAL DECREE',
+        type: 'Separate original franchise',
+        color: '#c27a00',
+        desc: 'An original action-driven franchise exploring conflict, power, and territory through distinct worldbuilding and characters.'
+      },
+      {
+        id: 's7',
+        short: 'STUDIO 7 AFRICA',
+        name: 'STUDIO 7 AFRICA',
+        type: 'Film and animation work',
+        color: '#12805c',
+        desc: 'The studio’s film and animation initiative, focused on visual storytelling and original screen projects.'
+      }
+    ];
+
+    const stories = [
+      {
+        id: 's1',
+        title: 'WAISEDHA',
+        fid: 'mwu',
+        line: 'MUTEBI WAISEDHA UNIVERSE',
+        status: 'LEGACY / NEEDS REVIEW',
+        summary: 'The foundation of the MWU, tracing the larger mythic and continuity structure of the shared fictional universe.',
+        body: 'WAISEDHA is the foundational story world of the MUTEBI WAISEDHA UNIVERSE. It introduces the core themes, scale, and history that shape the broader universe and its central characters. It remains one of the most important story roots within the studio’s creative mythology.'
+      },
+      {
+        id: 's2',
+        title: 'LUVICEBI',
+        fid: 'mwu',
+        line: 'MUTEBI WAISEDHA UNIVERSE',
+        status: 'INCOMPLETE SOURCE',
+        summary: 'A developing storyline within the MWU with its own narrative direction and character history.',
+        body: 'LUVICEBI remains one of the active storylines in the broader MWU framework. As new material is developed, more of its place in the shared universe will be clarified and expanded.'
+      },
+      {
+        id: 's3',
+        title: 'BORNEFAITH',
+        fid: 'mwu',
+        line: 'MUTEBI WAISEDHA UNIVERSE',
+        status: 'INCOMPLETE SOURCE',
+        summary: 'A major thread in the wider universe carrying mythic, symbolic, and continuity-driven themes.',
+        body: 'BORNEFAITH adds a distinct philosophical and dramatic layer to the larger MWU canon. It enriches the universe with layered worldbuilding and thematic depth, helping define the creative identity of the studio.'
+      },
+      {
+        id: 's4',
+        title: 'CARDIAC / A.N.T.I.',
+        fid: 'mwu',
+        line: 'WAISEDHA',
+        status: 'LEGACY / NEEDS REVIEW',
+        summary: 'An older material thread that reflects the studio’s evolving continuity and creative development.',
+        body: 'CARDIAC / A.N.T.I. reflects earlier creative experiments and continuity notes within the MWU. It remains a useful part of the studio archive and demonstrates how characters, themes, and worldbuilding have evolved over time.'
+      },
+      {
+        id: 's5',
+        title: '0 STATE: TIER SYSTEM',
+        fid: 'zs',
+        line: '0 STATE',
+        status: 'INCOMPLETE SOURCE',
+        summary: 'A foundational concept within the 0 STATE franchise, exploring scale, power, and battle logic.',
+        body: '0 STATE builds its own rules and internal logic as a separate franchise, rather than as part of the MWU. Its tier system and battle frameworks create a different creative principle while remaining rooted in original speculative storytelling.'
+      },
+      {
+        id: 's6',
+        title: 'KOLONIAL DECREE: HIGH TIER',
+        fid: 'kd',
+        line: 'KOLONIAL DECREE',
+        status: 'INCOMPLETE SOURCE',
+        summary: 'A side story within the broader KOLONIAL DECREE continuity, exploring the wider conflicts of the franchise.',
+        body: 'KOLONIAL DECREE expands the studio’s original worldbuilding beyond the MWU. High Tier introduces a distinctive angle within the franchise while maintaining the larger creative identity of the property.'
+      }
+    ];
+
+    const characters = [
+      { id: 'c1', name: 'CARDIAC', fid: 'mwu', status: 'LEGACY / NEEDS REVIEW', bio: 'A key figure within the older MWU continuity, carrying the weight of earlier story material and evolving creative history.' },
+      { id: 'c2', name: 'PHALANX', fid: 'mwu', status: 'LEGACY / NEEDS REVIEW', bio: 'A significant character presence linked to the early core material of the MWU archive.' },
+      { id: 'c3', name: 'GORSPEED', fid: 'mwu', status: 'INCOMPLETE SOURCE', bio: 'A character associated with the wider MWU setting, whose role remains part of the studio’s ongoing continuity development.' },
+      { id: 'c4', name: 'Ggorku', fid: 'zs', status: 'INCOMPLETE SOURCE', bio: 'A character in the 0 STATE universe whose identity is shaped by a different scale and rule set from the MWU.' },
+      { id: 'c5', name: 'Remorse', fid: 'zs', status: 'INCOMPLETE SOURCE', bio: 'One of the major figures within the 0 STATE continuity, shaped by conflict, scale, and dramatic tension.' },
+      { id: 'c6', name: 'High Tier', fid: 'kd', status: 'INCOMPLETE SOURCE', bio: 'A central element within KOLONIAL DECREE, representing the franchise’s own creative and power-driven storytelling direction.' }
+    ];
+
+    const esc = (str) => String(str ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+
+    function getFranchise(id) {
+      return franchises.find((f) => f.id === id) || { short: 'MWS', name: 'MUTEBI WAISEDHA STUDIOS', color: '#d71920' };
+    }
+
+    function getHome() {
+      const latest = [...stories].slice(0, 4);
+      return `
+        <main>
+          <section class="hero">
+            <div class="hero-inner">
+              <span class="tag">Original stories · original worlds</span>
+              <h1>WORLDS.<br>STORIES.<br>LEGACY.</h1>
+              <p>MUTEBI WAISEDHA STUDIOS creates original fiction, characters, and creative worlds designed for readers and audiences who want immersive storytelling with distinct identity and purpose.</p>
+              <div class="hero-actions">
+                <a class="btn" href="#archive">Explore the archive</a>
+                <a class="btn secondary" href="#unis">View our worlds</a>
+              </div>
+            </div>
+          </section>
+
+          <div class="ticker">
+            <a href="#unis">Explore franchises</a>
+            <a href="#archive">Story archive</a>
+            <a href="#chars">Character directory</a>
+            <a href="#cont">Continuity guide</a>
+          </div>
+
+          <div class="content">
+            <div class="section-intro">
+              <div>
+                <div class="eyebrow">The studio</div>
+                <p>Different worlds. Different rules. One creator-led vision.</p>
+              </div>
+            </div>
+
+            <div class="card-row">
+              ${franchises.map((f) => `
+                <a class="mini-card" href="#f-${f.id}">
+                  <div class="art" style="background:linear-gradient(160deg, ${f.color}, #0a0a0d 85%)">${esc(f.short.slice(0, 3))}</div>
+                  <p>${esc(f.short)}</p>
+                  <small>${esc(f.type)}</small>
+                </a>
+              `).join('')}
+            </div>
+
+            <div class="grid-2" style="margin-top:32px;">
+              <div>
+                <h2>Stories</h2>
+                <div class="list">
+                  ${latest.map((story) => `
+                    <a class="list-item" href="#s-${story.id}">
+                      <div class="thumb" style="background:linear-gradient(135deg, ${getFranchise(story.fid).color}, #111)">${esc(getFranchise(story.fid).short.slice(0,3))}</div>
+                      <div class="info">
+                        <small>${esc(getFranchise(story.fid).short)} / ${esc(story.line || 'Original fiction')}</small>
+                        <h3>${esc(story.title)}</h3>
+                        <p>${esc(story.summary)}</p>
+                      </div>
+                    </a>
+                  `).join('')}
+                </div>
+                <p style="margin-top:18px;"><a class="btn secondary" href="#archive">Browse all stories</a></p>
+              </div>
+
+              <div>
+                <h2>What we build</h2>
+                <div class="panel">
+                  <p>MUTEBI WAISEDHA STUDIOS brings together original stories, original characters, and original worlds rooted in speculative fiction, action, and cinematic storytelling. Our creative work spans multiple franchises while keeping each universe distinct.</p>
+                  <div class="list">
+                    <div class="list-item" style="padding-top:0;">
+                      <div class="thumb" style="background:linear-gradient(135deg,#c4161c,#111)">MWU</div>
+                      <div class="info">
+                        <small>Shared universe</small>
+                        <h3>MUTEBI WAISEDHA UNIVERSE</h3>
+                        <p>The central fictional universe behind the studio’s broader creative mythology.</p>
+                      </div>
+                    </div>
+                    <div class="list-item" style="padding-top:0;">
+                      <div class="thumb" style="background:linear-gradient(135deg,#1f5fc7,#111)">0S</div>
+                      <div class="info">
+                        <small>Separate franchise</small>
+                        <h3>0 STATE</h3>
+                        <p>A distinct original franchise with its own world rules and creative identity.</p>
+                      </div>
+                    </div>
+                    <div class="list-item" style="padding-top:0;">
+                      <div class="thumb" style="background:linear-gradient(135deg,#c27a00,#111)">KD</div>
+                      <div class="info">
+                        <small>Separate franchise</small>
+                        <h3>KOLONIAL DECREE</h3>
+                        <p>A stand-alone world with its own conflicts, power systems, and narrative direction.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      `;
+    }
+
+    function getArchive() {
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb">Archive</div>
+            <h1>Story archive</h1>
+            <p class="lead">Explore the original story worlds, franchises, and continuity threads built by MUTEBI WAISEDHA STUDIOS.</p>
+            <div class="search-box">
+              <input id="storyQuery" type="text" placeholder="Search stories, titles, and worlds...">
+              <select id="storyFranchise">
+                <option value="">All franchises</option>
+                ${franchises.map((f) => `<option value="${f.id}">${esc(f.name)}</option>`).join('')}
+              </select>
+            </div>
+            <div id="storyResults">${renderStories(stories)}</div>
+          </div>
+        </main>
+      `;
+    }
+
+    function renderStories(items) {
+      if (!items.length) return '<div class="panel"><p>No stories match your search.</p></div>';
+      return `<div class="list">${items.map((story) => `
+        <a class="list-item" href="#s-${story.id}">
+          <div class="thumb" style="background:linear-gradient(135deg, ${getFranchise(story.fid).color}, #111)">${esc(getFranchise(story.fid).short.slice(0,3))}</div>
+          <div class="info">
+            <small>${esc(getFranchise(story.fid).short)} / ${esc(story.line || 'Original fiction')}</small>
+            <h3>${esc(story.title)}</h3>
+            <p>${esc(story.summary)}</p>
+          </div>
+        </a>
+      `).join('')}</div>`;
+    }
+
+    function getCharacters() {
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb">Characters</div>
+            <h1>Character directory</h1>
+            <p class="lead">Discover the central figures, antagonists, and identities that shape our original worlds.</p>
+            <div class="search-box">
+              <input id="charQuery" type="text" placeholder="Search characters...">
+              <select id="charFranchise">
+                <option value="">All franchises</option>
+                ${franchises.map((f) => `<option value="${f.id}">${esc(f.name)}</option>`).join('')}
+              </select>
+            </div>
+            <div id="charResults">${renderCharacters(characters)}</div>
+          </div>
+        </main>
+      `;
+    }
+
+    function renderCharacters(items) {
+      if (!items.length) return '<div class="panel"><p>No characters match your search.</p></div>';
+      return `<div class="list">${items.map((character) => `
+        <a class="list-item" href="#c-${character.id}">
+          <div class="thumb" style="background:linear-gradient(135deg, ${getFranchise(character.fid).color}, #111)">${esc(character.name.slice(0,2).toUpperCase())}</div>
+          <div class="info">
+            <small>${esc(getFranchise(character.fid).short)} / ${esc(character.status || 'Original character')}</small>
+            <h3>${esc(character.name)}</h3>
+            <p>${esc(character.bio || 'More details coming soon.')}</p>
+          </div>
+        </a>
+      `).join('')}</div>`;
+    }
+
+    function getFranchisePage(id) {
+      const franchise = getFranchise(id);
+      const franchiseStories = stories.filter((story) => story.fid === id);
+      const franchiseChars = characters.filter((character) => character.fid === id);
+
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb">Franchise</div>
+            <h1>${esc(franchise.name)}</h1>
+            <div class="badge">${esc(franchise.type)}</div>
+            <p class="lead">${esc(franchise.desc)}</p>
+            <div class="grid-2">
+              <div>
+                <h2>Stories</h2>
+                <div class="list">${franchiseStories.length ? franchiseStories.map((story) => `
+                  <a class="list-item" href="#s-${story.id}">
+                    <div class="thumb" style="background:linear-gradient(135deg, ${franchise.color}, #111)">${esc(franchise.short.slice(0,3))}</div>
+                    <div class="info">
+                      <small>${esc(story.line)}</small>
+                      <h3>${esc(story.title)}</h3>
+                      <p>${esc(story.summary)}</p>
+                    </div>
+                  </a>
+                `).join('') : '<div class="panel"><p>More stories are being developed for this franchise.</p></div>'}</div>
+              </div>
+              <div>
+                <h2>Characters</h2>
+                <div class="list">${franchiseChars.length ? franchiseChars.map((character) => `
+                  <a class="list-item" href="#c-${character.id}">
+                    <div class="thumb" style="background:linear-gradient(135deg, ${franchise.color}, #111)">${esc(character.name.slice(0,2).toUpperCase())}</div>
+                    <div class="info">
+                      <small>${esc(character.status)}</small>
+                      <h3>${esc(character.name)}</h3>
+                      <p>${esc(character.bio || 'More details coming soon.')}</p>
+                    </div>
+                  </a>
+                `).join('') : '<div class="panel"><p>More character profiles will be added as the franchise expands.</p></div>'}</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      `;
+    }
+
+    function getStory(id) {
+      const story = stories.find((s) => s.id === id);
+      if (!story) return `<main class="page"><div class="content"><h1>Story not found</h1><p class="lead">The story you requested is not available in this archive.</p></div></main>`;
+      const franchise = getFranchise(story.fid);
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb"><a href="#f-${story.fid}">${esc(franchise.short)}</a> / ${esc(story.line)}</div>
+            <h1>${esc(story.title)}</h1>
+            <div class="badge">${esc(story.status)}</div>
+            <p class="lead">${esc(story.summary)}</p>
+            <div class="story-body">${esc(story.body)}</div>
+          </div>
+        </main>
+      `;
+    }
+
+    function getCharacter(id) {
+      const character = characters.find((c) => c.id === id);
+      if (!character) return `<main class="page"><div class="content"><h1>Character not found</h1><p class="lead">This character profile is not currently available.</p></div></main>`;
+      const franchise = getFranchise(character.fid);
+      const appearances = stories.filter((story) => story.fid === character.fid).slice(0, 4);
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb"><a href="#f-${character.fid}">${esc(franchise.short)}</a></div>
+            <h1>${esc(character.name)}</h1>
+            <div class="badge">${esc(character.status)}</div>
+            <p class="lead">${esc(character.bio || 'More profile details will be shared as the world expands.')}</p>
+            <div class="panel">
+              <h2>Appears in</h2>
+              <div class="list">
+                ${appearances.map((story) => `
+                  <a class="list-item" href="#s-${story.id}">
+                    <div class="thumb" style="background:linear-gradient(135deg, ${franchise.color}, #111)">${esc(franchise.short.slice(0,3))}</div>
+                    <div class="info">
+                      <small>${esc(story.line)}</small>
+                      <h3>${esc(story.title)}</h3>
+                      <p>${esc(story.summary)}</p>
+                    </div>
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        </main>
+      `;
+    }
+
+    function getContinuity() {
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb">Continuity</div>
+            <h1>Continuity guide</h1>
+            <p class="lead">MUTEBI WAISEDHA UNIVERSE is the studio’s shared fictional universe. 0 STATE and KOLONIAL DECREE remain separate original franchises with their own worldbuilding.</p>
+            <div class="grid-2">
+              <div class="panel">
+                <h2>Universe structure</h2>
+                <div class="list">
+                  <div class="list-item" style="padding-top:0;">
+                    <div class="thumb" style="background:linear-gradient(135deg,#c4161c,#111)">MWU</div>
+                    <div class="info">
+                      <small>Shared universe</small>
+                      <h3>MUTEBI WAISEDHA UNIVERSE</h3>
+                      <p>The central fictional world where the studio’s core lore and franchise identity are anchored.</p>
+                    </div>
+                  </div>
+                  <div class="list-item" style="padding-top:0;">
+                    <div class="thumb" style="background:linear-gradient(135deg,#1f5fc7,#111)">0S</div>
+                    <div class="info">
+                      <small>Separate franchise</small>
+                      <h3>0 STATE</h3>
+                      <p>A distinct world with independent rules, tone, and continuity.</p>
+                    </div>
+                  </div>
+                  <div class="list-item" style="padding-top:0;">
+                    <div class="thumb" style="background:linear-gradient(135deg,#c27a00,#111)">KD</div>
+                    <div class="info">
+                      <small>Separate franchise</small>
+                      <h3>KOLONIAL DECREE</h3>
+                      <p>An original franchise with its own narrative direction and conflict structure.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <h2>Studio work</h2>
+                <div class="list">
+                  <div class="list-item" style="padding-top:0;">
+                    <div class="thumb" style="background:linear-gradient(135deg,#12805c,#111)">S7</div>
+                    <div class="info">
+                      <small>Film & animation</small>
+                      <h3>STUDIO 7 AFRICA</h3>
+                      <p>Our visual storytelling initiative, spanning animation and film-based creative work.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      `;
+    }
+
+    function getStudio() {
+      return `
+        <main class="page">
+          <div class="content">
+            <div class="crumb">Studio</div>
+            <h1>MUTEBI WAISEDHA STUDIOS</h1>
+            <p class="lead">We create original stories, characters, and worlds with a long-form creative vision rooted in speculative fiction, action, and cinematic storytelling.</p>
+            <div class="grid-2">
+              <div class="panel">
+                <h2>Our focus</h2>
+                <p>Our work encompasses several original franchises and connected story systems. Each universe is designed to stand on its own, while also contributing to the wider creative identity of the studio.</p>
+              </div>
+              <div class="panel">
+                <h2>Creative identity</h2>
+                <p>We are building a studio practice centered on worldbuilding, character design, narrative continuity, and original entertainment projects with a strong editorial voice.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      `;
+    }
+
+    function attachSearchHandlers() {
+      const storyQuery = document.getElementById('storyQuery');
+      const storyFranchise = document.getElementById('storyFranchise');
+      if (storyQuery && storyFranchise) {
+        const applyStoryFilters = () => {
+          const q = storyQuery.value.trim().toLowerCase();
+          const fid = storyFranchise.value;
+          const matches = stories.filter((story) => {
+            const matchesFranchise = !fid || story.fid === fid;
+            const haystack = `${story.title} ${story.line} ${story.summary} ${story.body}`.toLowerCase();
+            const matchesQuery = !q || haystack.includes(q);
+            return matchesFranchise && matchesQuery;
+          });
+          document.getElementById('storyResults').innerHTML = renderStories(matches);
+        };
+        storyQuery.addEventListener('input', applyStoryFilters);
+        storyFranchise.addEventListener('change', applyStoryFilters);
+      }
+
+      const charQuery = document.getElementById('charQuery');
+      const charFranchise = document.getElementById('charFranchise');
+      if (charQuery && charFranchise) {
+        const applyCharFilters = () => {
+          const q = charQuery.value.trim().toLowerCase();
+          const fid = charFranchise.value;
+          const matches = characters.filter((character) => {
+            const matchesFranchise = !fid || character.fid === fid;
+            const haystack = `${character.name} ${character.bio} ${character.status}`.toLowerCase();
+            const matchesQuery = !q || haystack.includes(q);
+            return matchesFranchise && matchesQuery;
+          });
+          document.getElementById('charResults').innerHTML = renderCharacters(matches);
+        };
+        charQuery.addEventListener('input', applyCharFilters);
+        charFranchise.addEventListener('change', applyCharFilters);
+      }
+    }
+
+    function renderPage() {
+      const hash = location.hash || '#home';
+      const page = hash.slice(1).split('-')[0];
+      const id = hash.slice(1).split('-').slice(1).join('-');
+
+      const pages = {
+        home: getHome,
+        archive: getArchive,
+        chars: getCharacters,
+        unis: () => `
+          <main class="page">
+            <div class="content">
+              <div class="crumb">Franchises</div>
+              <h1>Franchises</h1>
+              <p class="lead">Our studio work spans individual worlds, each with its own identity, stories, and creative direction.</p>
+              <div class="list">
+                ${franchises.map((f) => `
+                  <a class="list-item" href="#f-${f.id}">
+                    <div class="thumb" style="background:linear-gradient(135deg, ${f.color}, #111)">${esc(f.short.slice(0,3))}</div>
+                    <div class="info">
+                      <small>${esc(f.type)}</small>
+                      <h3>${esc(f.name)}</h3>
+                      <p>${esc(f.desc)}</p>
+                    </div>
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          </main>
+        `,
+        cont: getContinuity,
+        studio: getStudio,
+        s: () => getStory(id),
+        c: () => getCharacter(id),
+        f: () => getFranchisePage(id)
+      };
+
+      document.getElementById('app').innerHTML = (pages[page] || getHome)();
+      attachSearchHandlers();
+
+      document.querySelectorAll('nav a').forEach((link) => {
+        const target = link.getAttribute('href');
+        link.classList.toggle('active', target === hash || (hash.startsWith('#s-') && target === '#archive') || (hash.startsWith('#c-') && target === '#chars'));
+      });
+    }
+
+    window.addEventListener('hashchange', renderPage);
+    renderPage();
+  </script>
+</body>
+</html>
